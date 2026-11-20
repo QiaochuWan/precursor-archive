@@ -1,0 +1,3383 @@
+{
+ "schema": "precursor-atlas/2",
+ "version": "1.0",
+ "updated": "2026-10-30",
+ "frame": {
+  "origin": "太阳系",
+  "axis_galactic_longitude_deg": 20,
+  "description": "原点为太阳系；+z 为天蝎主干在银盘内的平均方向（银经20°，整体朝向银心一侧）；+x 位于银盘内且垂直于 z；+y 指向银北。单位：光年。四象限按 x、y 正负划分：I(+x,+y) II(−x,+y) III(−x,−y) IV(+x,−y)。"
+ },
+ "categories": {
+  "花园世界": {
+   "en": "Garden",
+   "color": "#6EE7B7"
+  },
+  "工业世界": {
+   "en": "Industrial",
+   "color": "#7DB4FF"
+  },
+  "农业世界": {
+   "en": "Agricultural",
+   "color": "#E8D46A"
+  },
+  "渔业世界": {
+   "en": "Fishery",
+   "color": "#4FD6E8"
+  },
+  "畜牧世界": {
+   "en": "Pastoral",
+   "color": "#F2A46B"
+  },
+  "采矿世界": {
+   "en": "Mining",
+   "color": "#D98C6F"
+  },
+  "宗教世界": {
+   "en": "Religious",
+   "color": "#C7A2FF"
+  },
+  "科考站": {
+   "en": "Research",
+   "color": "#F5D38A"
+  },
+  "失联世界": {
+   "en": "Lost",
+   "color": "#FF7A9A"
+  },
+  "待开发世界": {
+   "en": "Prospect",
+   "color": "#A6B0C3"
+  },
+  "灾毁世界": {
+   "en": "Destroyed",
+   "color": "#8C95A6"
+  },
+  "黑洞枢纽": {
+   "en": "Black-hole hub",
+   "color": "#B98CFF"
+  },
+  "周期航路": {
+   "en": "Periodic string",
+   "color": "#B98CFF"
+  },
+  "域外前哨": {
+   "en": "Extragalactic outpost",
+   "color": "#FFD9A0"
+  }
+ },
+ "statuses": {
+  "稳定航路": "接入稳定航路网络",
+  "周期可达": "仅周期性通路可达",
+  "待复联": "逾期未联络，等待航路复通",
+  "失联": "航路改变后失去联系",
+  "待开发": "已勘测、未定居",
+  "科考站": "无常住殖民人口的科研设施",
+  "灾毁": "毁于自然灾害",
+  "特殊航路": "雅各布之梯与麦哲伦远征相关节点",
+  "湮灭": "遭遇湮灭事件"
+ },
+ "regions": {
+  "stable": {
+   "name": "稳定航路主体包络",
+   "z_min": -500,
+   "z_max": 1500,
+   "radius": 250,
+   "taper": 200,
+   "color": "#4FD6E8"
+  },
+  "fringe": {
+   "name": "周期性边疆包络",
+   "z_min": -500,
+   "z_max": 1500,
+   "radius": 500,
+   "taper": 200,
+   "color": "#E2B254"
+  },
+  "explored": {
+   "name": "人类探索过的世界",
+   "z_min": 0,
+   "z_max": 20000,
+   "radius": 2000,
+   "color": "#7FE0A8"
+  },
+  "trunk": {
+   "name": "天蝎主干航路",
+   "z_min": -500,
+   "z_max": 1500,
+   "extend_to": 20000
+  }
+ },
+ "routes": [
+  {
+   "id": "jacob",
+   "name": "雅各布之梯",
+   "kind": "periodic",
+   "color": "#B98CFF",
+   "through": [
+    "w46",
+    "jacobs-ladder",
+    "mammon"
+   ],
+   "note": "10年周期；与银盘呈大角度的罕见宇宙弦"
+  },
+  {
+   "id": "magellan",
+   "name": "麦哲伦弦",
+   "kind": "expedition",
+   "color": "#B98CFF",
+   "through": [
+    "mammon",
+    "hephaestus"
+   ],
+   "curve": true,
+   "note": "稳定高速弦；最近处距主干约600光年；单程约70年"
+  }
+ ],
+ "galaxy": {
+  "center": {
+   "x": -8892.5,
+   "y": 0,
+   "z": 24432.0
+  },
+  "radius": 50000,
+  "sun_distance": 26000,
+  "landmarks": [
+   {
+    "id": "lmc",
+    "name": "大麦哲伦星系",
+    "en": "Large Magellanic Cloud",
+    "x": -134985.0,
+    "y": -88509.7,
+    "z": -22673.0,
+    "radius": 7000
+   },
+   {
+    "id": "smc",
+    "name": "小麦哲伦星系",
+    "en": "Small Magellanic Cloud",
+    "x": -139510.9,
+    "y": -139752.2,
+    "z": 31717.6,
+    "radius": 3500,
+    "note": "没有可用航路"
+   }
+  ]
+ },
+ "worlds": [
+  {
+   "id": "w01",
+   "no": "01",
+   "name": "新亚历山大",
+   "en": "New Alexandria",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "母星直属星区",
+   "domain": "近邻星域",
+   "host": "Proxima Cen",
+   "planet": "Proxima Cen b",
+   "x": -3.877,
+   "y": -0.142,
+   "z": 1.72,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "离地球最近的殖民地，也是人类在太阳系外的第一个据点：约 F−70，“渡鸦号”的七名船员在这里点亮了一座灯塔。比邻星的耀斑让地表难以久居，居民大多住在地下城里；轨道船坞专门承接近邻航线的船只维修。",
+   "facts": {
+    "旧名": "灯塔",
+    "命名由来": "最初叫“灯塔”。战后的英语移民改名为新亚历山大，取亚历山大港灯塔之意。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Proxima%20Cen%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "受耀斑影响的近邻宜居带目标；未证实大气",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w02",
+   "no": "02",
+   "name": "新伊甸",
+   "en": "New Eden",
+   "kind": "花园世界",
+   "status": "稳定航路",
+   "sector": "鲸鱼星区",
+   "domain": "天仓星域",
+   "host": "GJ 1002",
+   "planet": "GJ 1002 b",
+   "x": 5.714,
+   "y": -14.635,
+   "z": 1.808,
+   "size": 1.0,
+   "tags": [
+    "花园世界"
+   ],
+   "summary": "最早一批分区地球化的世界之一，园林式的生态区一块一块向外扩展。它也是近邻星区最大的移民接待站，很多人在这里第一次踩到别的星球的泥土。新伊甸基因的总部也设在这里。",
+   "facts": {
+    "旧名": "新伊甸",
+    "命名由来": "移民船队给它起的名字，后来一直沿用。",
+    "企业": "新伊甸基因（New Eden Genetics）总部所在地",
+    "建立": "战前探索浪潮中建立，约 F−50 前后有近五百人，是当时最大的据点",
+    "首次选举": "约 F−50 选举领袖；与天蝎中心争“第一个太阳系外民选政府”"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201002%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "近地球最小质量，宜居带内；表面未知",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w03",
+   "no": "03",
+   "name": "GJ 1002 c / 01",
+   "en": "GJ 1002 c / 01",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "鲸鱼星区",
+   "domain": "天仓星域",
+   "host": "GJ 1002",
+   "planet": "GJ 1002 c",
+   "x": 5.714,
+   "y": -14.635,
+   "z": 1.808,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "新伊甸同一个恒星系里更冷的那颗行星。聚变供暖的温室连成一片，种着耐寒的麦子和土豆，地下种子库保存着近邻星区大部分作物的原种。",
+   "facts": {
+    "旧名": "霜穗",
+    "命名由来": "按联邦惯例以行星编号加行政单元编号命名，本地人更习惯叫它的旧名“霜穗”。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201002%20c",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "较冷的宜居带目标；最小质量已测",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w04",
+   "no": "04",
+   "name": "银帆鲱港",
+   "en": "Silverherring Haven",
+   "kind": "渔业世界",
+   "status": "稳定航路",
+   "sector": "南航星区",
+   "domain": "近南星域",
+   "host": "GJ 1061",
+   "planet": "GJ 1061 d",
+   "x": -5.684,
+   "y": -9.554,
+   "z": -4.461,
+   "size": 1.0,
+   "tags": [
+    "渔业世界"
+   ],
+   "summary": "封闭水域里养着一种改良的银色鲱鱼，鱼罐头和蛋白粉销往整个近邻星区。港口的水循环设备做得很好，好到不少殖民地专门派人来这里学。",
+   "facts": {
+    "旧名": "暮湾",
+    "命名由来": "得名于港里养的银鲱鱼。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%201061%20d",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "宜居带径向速度行星；未知海洋与大气",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w05",
+   "no": "05",
+   "name": "新阿姆斯特丹",
+   "en": "Nieuw Amsterdam",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "北航星区",
+   "domain": "北仓星域",
+   "host": "GJ 273",
+   "planet": "GJ 273 b",
+   "x": -2.597,
+   "y": 2.224,
+   "z": -11.866,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "农谷都建在受控的峡谷里，粮食加工厂和生物肥料厂紧挨着谷口。它是近邻星区的粮仓之一。",
+   "facts": {
+    "旧名": "谷神",
+    "命名由来": "荷兰移民延续了“新阿姆斯特丹”这个老名字。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20273%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "近宜居带超级地球；大气未测定",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w06",
+   "no": "06",
+   "name": "红背羊原",
+   "en": "Redback Downs",
+   "kind": "畜牧世界",
+   "status": "稳定航路",
+   "sector": "鲸鱼星区",
+   "domain": "天仓星域",
+   "host": "Teegarden's Star",
+   "planet": "Teegarden's Star c",
+   "x": 6.373,
+   "y": -7.525,
+   "z": -7.673,
+   "size": 1.0,
+   "tags": [
+    "畜牧世界"
+   ],
+   "summary": "红背羊住在供暖的穹顶牧场里，耐寒、毛厚，是这里最有名的出口品。殖民地的兽医学校在联邦颇有名气。",
+   "facts": {
+    "旧名": "绛原",
+    "命名由来": "得名于本地培育的红背羊。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Teegarden%27s%20Star%20c",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "冷侧宜居带、近地球最小质量；环境未知",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w07",
+   "no": "07",
+   "name": "新大阪",
+   "en": "Shin-Ōsaka",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "母星直属星区",
+   "domain": "近邻星域",
+   "host": "Ross 128",
+   "planet": "Ross 128 b",
+   "x": -5.246,
+   "y": 9.489,
+   "z": -1.893,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "城市和工厂都在地下，热量由轨道上的大型散热阵列排走。日本移民把老家的商人气质也带了过来，这里的加工订单从来接不完。",
+   "facts": {
+    "旧名": "锻晨",
+    "命名由来": "日本移民以故乡城市命名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Ross%20128%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "靠近或位于宜居带内缘以内；2026气候模拟仍多解",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w08",
+   "no": "08",
+   "name": "Wolf 1061 c / 02",
+   "en": "Wolf 1061 c / 02",
+   "kind": "采矿世界",
+   "status": "稳定航路",
+   "sector": "天蝎星区",
+   "domain": "近蝎星域",
+   "host": "Wolf 1061",
+   "planet": "Wolf 1061 c",
+   "x": -3.686,
+   "y": 5.64,
+   "z": 12.322,
+   "size": 1.0,
+   "tags": [
+    "采矿世界"
+   ],
+   "summary": "地下矿城，冶炼厂日夜不停。这里的矿脉品位很高，近邻星区一半的结构钢来自这里。",
+   "facts": {
+    "旧名": "砧台",
+    "命名由来": "采掘公司早年的行政编号，一直没有改。本地人叫它“砧台”。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Wolf%201061%20c",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "内缘附近超级地球；热环境与大气不确定",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w09",
+   "no": "09",
+   "name": "GJ 682 / 03",
+   "en": "GJ 682 / 03",
+   "kind": "采矿世界",
+   "status": "稳定航路",
+   "sector": "天蝎星区",
+   "domain": "近蝎星域",
+   "host": "GJ 682",
+   "planet": "GJ 682 b",
+   "x": -9.075,
+   "y": -1.887,
+   "z": 13.444,
+   "size": 1.0,
+   "tags": [
+    "采矿世界"
+   ],
+   "summary": "开采整个星系资源的据点，大多数人住在轨道栖居地上，下到地面只是去上班。",
+   "facts": {
+    "旧名": "玄铁",
+    "命名由来": "星系里第三个行政聚居单元。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20682%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "NASA收录；RV最小质量较大，岩质与大气未知",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w10",
+   "no": "10",
+   "name": "新比尔包",
+   "en": "Nuevo Bilbao",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "南航星区",
+   "domain": "近南星域",
+   "host": "GJ 3323",
+   "planet": "GJ 3323 b",
+   "x": -1.742,
+   "y": -8.088,
+   "z": -15.455,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "西班牙语移民建起的工业城，主要生产重型设备，也在做大气改造的试验。城里没有花园，本地人说他们的花园是车间。",
+   "facts": {
+    "旧名": "炉门",
+    "命名由来": "以西班牙北部的老工业城比尔包命名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%203323%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "宜居带归类依赖恒星参数；档案辐照值偏高",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w11",
+   "no": "11",
+   "name": "北仓",
+   "en": "Boreal Depot",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "北航星区",
+   "domain": "北仓星域",
+   "host": "GJ 251",
+   "planet": "GJ 251 c",
+   "x": 5.156,
+   "y": 4.751,
+   "z": -16.797,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "一座巨大的密闭农业综合体，也是近邻航线上的粮食中转仓。高压环境让这里的生物技术研究走在前面。",
+   "facts": {
+    "旧名": "北仓",
+    "命名由来": "名字就是它的用途：北方的粮仓。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/GJ%20251%20c",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "2025确认；最小质量约3.9地球，非已证实地球同类",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w12",
+   "no": "12",
+   "name": "静海原",
+   "en": "Stillwater Plain",
+   "kind": "花园世界",
+   "status": "稳定航路",
+   "sector": "北航星区",
+   "domain": "静原星域",
+   "host": "Wolf 1069",
+   "planet": "Wolf 1069 b",
+   "x": 29.383,
+   "y": 6.341,
+   "z": 8.568,
+   "size": 1.0,
+   "tags": [
+    "花园世界"
+   ],
+   "summary": "地球化做得最彻底的世界之一，湖泊、草原和人造山林都是一代代人造出来的。它也是联邦有名的度假地。",
+   "facts": {
+    "旧名": "静海原",
+    "命名由来": "得名于第一批移民落脚的那片平静湖原。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Wolf%201069%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "近地球最小质量的宜居带目标；未知大气",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w13",
+   "no": "13",
+   "name": "阿祖尔海",
+   "en": "Mar Azul",
+   "kind": "渔业世界",
+   "status": "稳定航路",
+   "sector": "鲸鱼星区",
+   "domain": "鲸南星域",
+   "host": "LHS 1140",
+   "planet": "LHS 1140 b",
+   "x": 10.074,
+   "y": -47.819,
+   "z": -0.953,
+   "size": 1.0,
+   "tags": [
+    "渔业世界"
+   ],
+   "summary": "海洋渔场建在轨道上和近岸的人工水域里。关于这颗星球到底有没有一片真正的大海，本地的学者已经争论了几代人。",
+   "facts": {
+    "旧名": "深蓝",
+    "命名由来": "葡萄牙语，意思是“蓝色的海”。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/LHS%201140%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "水世界/挥发物丰富模型可行，2026大气争议未解",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w14",
+   "no": "14",
+   "name": "圣布伦丹",
+   "en": "Saint Brendan",
+   "kind": "宗教世界",
+   "status": "稳定航路",
+   "sector": "鲸鱼星区",
+   "domain": "鲸南星域",
+   "host": "TRAPPIST-1",
+   "planet": "TRAPPIST-1 e",
+   "x": 17.002,
+   "y": -33.864,
+   "z": 14.411,
+   "size": 1.0,
+   "tags": [
+    "宗教世界"
+   ],
+   "summary": "修会的穹顶城市，以朝圣医院和生态伦理研究闻名，教会的许多档案也存放在这里。",
+   "facts": {
+    "旧名": "晨祷",
+    "命名由来": "以航海圣徒圣布伦丹命名，是最早建立的教会殖民地之一。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TRAPPIST-1%20e",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "地球尺度宜居带；JWST未确认大气",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w15",
+   "no": "15",
+   "name": "TRAPPIST-1 f / 01",
+   "en": "TRAPPIST-1 f / 01",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "鲸鱼星区",
+   "domain": "鲸南星域",
+   "host": "TRAPPIST-1",
+   "planet": "TRAPPIST-1 f",
+   "x": 17.002,
+   "y": -33.864,
+   "z": 14.411,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "TRAPPIST-1 星系的粮食基地。供暖温室和种子保育站沿着晨昏线排开。",
+   "facts": {
+    "旧名": "寒穗",
+    "命名由来": "行星 f 下的第一个农业行政单元。本地人叫它“寒穗”。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TRAPPIST-1%20f",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "地球尺度冷侧宜居带；大气尚未确定",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w16",
+   "no": "16",
+   "name": "蓝鲸湾",
+   "en": "Bluewhale Bay",
+   "kind": "渔业世界",
+   "status": "稳定航路",
+   "sector": "鲸鱼星区",
+   "domain": "鲸南星域",
+   "host": "TRAPPIST-1",
+   "planet": "TRAPPIST-1 g",
+   "x": 17.002,
+   "y": -33.864,
+   "z": 14.411,
+   "size": 1.0,
+   "tags": [
+    "渔业世界"
+   ],
+   "summary": "人工水体养殖鲸类和大型鱼类，冰层下面的养殖场是这里的招牌。",
+   "facts": {
+    "旧名": "冰镜",
+    "命名由来": "得名于港里最有名的工程蓝鲸品系。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TRAPPIST-1%20g",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "外侧温带目标；表面状态未证实",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w17",
+   "no": "17",
+   "name": "长春",
+   "en": "Changchun",
+   "kind": "花园世界",
+   "status": "稳定航路",
+   "sector": "南航星区",
+   "domain": "长春星域",
+   "host": "TOI-700",
+   "planet": "TOI-700 d",
+   "x": -87.654,
+   "y": -45.902,
+   "z": -22.721,
+   "size": 1.0,
+   "tags": [
+    "花园世界"
+   ],
+   "summary": "经过几代人改造的花园世界，有大学，也出口生态技术。城市不大，四季分明。",
+   "facts": {
+    "旧名": "长春",
+    "命名由来": "中文移民保留下来的名字，取“四季长春”的意思。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TOI-700%20d",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "小型宜居带行星；2026档案有更新解，大气仍未知",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w18",
+   "no": "18",
+   "name": "新蓬迪谢里",
+   "en": "Nouvelle Pondichéry",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "南航星区",
+   "domain": "长春星域",
+   "host": "TOI-700",
+   "planet": "TOI-700 e",
+   "x": -87.654,
+   "y": -45.902,
+   "z": -22.721,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "遮阳农场和温室种植园，大部分粮食供给同星系的长春。",
+   "facts": {
+    "旧名": "夏禾",
+    "命名由来": "法国和泰米尔移民一起建立，沿用了印度旧城本地治里的法文名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TOI-700%20e",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "地球尺度，乐观宜居带内缘附近",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w19",
+   "no": "19",
+   "name": "长角牧场",
+   "en": "Longhorn Range",
+   "kind": "畜牧世界",
+   "status": "稳定航路",
+   "sector": "南航星区",
+   "domain": "长春星域",
+   "host": "TOI-715",
+   "planet": "TOI-715 b",
+   "x": -126.978,
+   "y": -53.856,
+   "z": -10.227,
+   "size": 1.0,
+   "tags": [
+    "畜牧世界"
+   ],
+   "summary": "人工牧场上放养着改良长角牛，遗传育种和高营养饲料是这里的两大产业。",
+   "facts": {
+    "旧名": "远牧",
+    "命名由来": "得名于本地的长角牛品系。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TOI-715%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "约1.55地球半径、保守宜居带；质量与表面待查",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w20",
+   "no": "20",
+   "name": "新望加锡",
+   "en": "Makassar Baru",
+   "kind": "渔业世界",
+   "status": "稳定航路",
+   "sector": "南航星区",
+   "domain": "红岸星域",
+   "host": "LP 890-9",
+   "planet": "LP 890-9 c",
+   "x": -33.885,
+   "y": -74.724,
+   "z": -66.751,
+   "size": 1.0,
+   "tags": [
+    "渔业世界"
+   ],
+   "summary": "浅水生态工程和封闭水产养殖，海产品经航路运往周边各个世界。",
+   "facts": {
+    "旧名": "红岸",
+    "命名由来": "印尼移民以故乡港城望加锡命名，意思是“新望加锡”。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/LP%20890-9%20c",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "约1.37地球半径的温带目标；气候可能多解",
+    "评级": "A"
+   }
+  },
+  {
+   "id": "w21",
+   "no": "21",
+   "name": "新马拉喀什",
+   "en": "New Marrakesh",
+   "kind": "花园世界",
+   "status": "稳定航路",
+   "sector": "南航星区",
+   "domain": "近南星域",
+   "host": "L 98-59",
+   "planet": "L 98-59 f",
+   "x": -32.68,
+   "y": -10.469,
+   "z": -4.699,
+   "size": 1.0,
+   "tags": [
+    "花园世界"
+   ],
+   "summary": "分区地球化的中转站，生态设备从这里运往周边的新殖民地。城里的集市保留着北非老城的样子。",
+   "facts": {
+    "旧名": "绿桥",
+    "命名由来": "北非移民对故乡马拉喀什的纪念。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/L%2098-59%20f",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "2025—26研究支持温带第五行星；真实半径未测",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w22",
+   "no": "22",
+   "name": "TOI-1266 / 03",
+   "en": "TOI-1266 / 03",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "北航星区",
+   "domain": "北穹星域",
+   "host": "TOI-1266",
+   "planet": "TOI-1266 d",
+   "x": 72.633,
+   "y": 91.486,
+   "z": -12.26,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "轨道农场和穹顶农场并存，高压环境下的作物研究很有名。",
+   "facts": {
+    "旧名": "高畦",
+    "命名由来": "系统内第三个农业行政区。本地人叫它“高畦”。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TOI-1266%20d",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "2025确认的非凌日外行星；质量不等于已知岩质",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w23",
+   "no": "23",
+   "name": "K2-72 e / 01",
+   "en": "K2-72 e / 01",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "回航星区",
+   "domain": "海门星域",
+   "host": "K2-72",
+   "planet": "K2-72 e",
+   "x": 72.78,
+   "y": -165.835,
+   "z": 118.948,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "多层农业穹顶，储存着大量战备粮，也给边缘航线上的船只做补给。",
+   "facts": {
+    "旧名": "百谷",
+    "命名由来": "行星 e 下的第一个农业行政单元。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-72%20e",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "小半径温带目标；辐照及偏心率存在误差",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w24",
+   "no": "24",
+   "name": "新库里蒂巴",
+   "en": "Nova Curitiba",
+   "kind": "花园世界",
+   "status": "稳定航路",
+   "sector": "北航星区",
+   "domain": "北穹星域",
+   "host": "K2-3",
+   "planet": "K2-3 d",
+   "x": -74.25,
+   "y": 118.108,
+   "z": -34.643,
+   "size": 1.0,
+   "tags": [
+    "花园世界"
+   ],
+   "summary": "封闭的花园都市，以生态修复技术出名。城外的荒野还在一点一点改造。",
+   "facts": {
+    "旧名": "青垣",
+    "命名由来": "巴西移民以故乡库里蒂巴命名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-3%20d",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "约1.46地球半径，偏暖；大气未知",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w25",
+   "no": "25",
+   "name": "双灯船坞",
+   "en": "Twin Lantern Yards",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "回航星区",
+   "domain": "双灯星域",
+   "host": "K2-288 B",
+   "planet": "K2-288 B b",
+   "x": 93.911,
+   "y": -102.575,
+   "z": -162.655,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "双星系统里的轨道船坞和维修厂。站在船坞的观景窗前，能同时看到两颗太阳。",
+   "facts": {
+    "旧名": "双灯",
+    "命名由来": "名字来自那两颗像灯笼一样挂在天上的太阳。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-288%20B%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "双星系统温带目标，约1.9地球半径；非必然岩质",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w26",
+   "no": "26",
+   "name": "玄穹",
+   "en": "Xuanqiong",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "北航星区",
+   "domain": "北穹星域",
+   "host": "K2-18",
+   "planet": "K2-18 b",
+   "x": -46.583,
+   "y": 110.087,
+   "z": -33.065,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "一座轨道科研工业站。站下那颗行星是不是被海洋覆盖，至今没有定论，所以没人在地面建城。",
+   "facts": {
+    "旧名": "玄穹",
+    "命名由来": "中文科研站的旧名，一直沿用。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-18%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "温带亚海王星；DMS及海洋解读有争议，不作类地候选",
+    "评级": "C"
+   }
+  },
+  {
+   "id": "w27",
+   "no": "27",
+   "name": "彼得罗沃",
+   "en": "Petrovo",
+   "kind": "渔业世界",
+   "status": "稳定航路",
+   "sector": "晨航星区",
+   "domain": "曙汀星域",
+   "host": "Kepler-1649",
+   "planet": "Kepler-1649 c",
+   "x": 240.06,
+   "y": 58.038,
+   "z": 171.511,
+   "size": 1.0,
+   "tags": [
+    "渔业世界",
+    "避难港"
+   ],
+   "summary": "由传奇俄罗斯裔飞行员、生态勘测员安雅·彼得罗娃创建的殖民地。位于稳定航路包络的边缘，是一个封闭水产世界，居民住在冰下居住区里；这里储备着应急物资，是边缘航线遇险时的避难港。人口以俄罗斯裔为主。本地特产安雅鳕鱼小有名气，晒成鱼干销往附近殖民地。",
+   "facts": {
+    "创建者": "安雅·彼得罗娃（俄罗斯裔飞行员、生态勘测员）",
+    "建立": "约 F160，安雅·彼得罗娃第一个登上这颗行星，在此建立殖民地并度过余生",
+    "曾用名": "曙汀",
+    "行星": "开普勒-1649 c",
+    "居民": "以俄罗斯裔为主",
+    "产业": "封闭水产养殖；应急物资储备与避难港",
+    "特产": "安雅鳕鱼（鱼干，销往附近殖民地）",
+    "相关人物": "娜迪娅·佩特连科（生态与生境委员）"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-1649%20c",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "约地球大小、温带辐照；未知海洋与大气",
+    "评级": "A"
+   },
+   "aliases": [
+    "彼得罗沃",
+    "Petrovo",
+    "安雅·彼得罗娃（旧称）",
+    "曙汀"
+   ]
+  },
+  {
+   "id": "w28",
+   "no": "28",
+   "name": "罗斯508采掘区",
+   "en": "Ross 508–01",
+   "kind": "采矿世界",
+   "status": "稳定航路",
+   "sector": "天蝎星区",
+   "domain": "蛇渡星域",
+   "host": "Ross 508",
+   "planet": "Ross 508 b",
+   "x": 2.135,
+   "y": 29.429,
+   "z": 21.592,
+   "size": 1.0,
+   "tags": [
+    "采矿世界"
+   ],
+   "summary": "地下采矿和轨道转运。行星的轨道很扁，气候忽冷忽热，矿工们轮班住在深层矿城里。",
+   "facts": {
+    "旧名": "星锤",
+    "命名由来": "恒星名加产业编号。本地人叫它“星锤”。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Ross%20508%20b",
+   "editor_notes": {
+    "坐标锚点": "观测宿主",
+    "观测依据": "偏心轨道掠过宜居带内缘；不是稳定地球气候",
+    "评级": "B"
+   }
+  },
+  {
+   "id": "w29",
+   "no": "29",
+   "name": "K2-130 / 02",
+   "en": "K2-130 / 02",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "内航星区",
+   "domain": "工旗星域",
+   "host": "K2-130",
+   "planet": "K2-130 b",
+   "x": -11.298,
+   "y": -100.738,
+   "z": 371.311,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "一颗受恒星强烈辐照的小行星，工厂全部自动化，建在地下，人住在轨道居住站上。",
+   "facts": {
+    "命名由来": "标准行政编号。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-130",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w30",
+   "no": "30",
+   "name": "新累西腓",
+   "en": "Nova Recife",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "内航星区",
+   "domain": "溪桥星域",
+   "host": "HD 180902",
+   "planet": "HD 180902 b",
+   "x": -31.948,
+   "y": -95.902,
+   "z": 325.761,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "星系里有一颗巨行星，农产品全部来自旋转的人工农业栖居地。",
+   "facts": {
+    "命名由来": "巴西移民以故乡港城累西腓命名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20180902",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w31",
+   "no": "31",
+   "name": "新瓦尔帕莱索",
+   "en": "Nueva Valparaíso",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "内航星区",
+   "domain": "溪桥星域",
+   "host": "HD 171028",
+   "planet": "HD 171028 b",
+   "x": 105.391,
+   "y": 46.977,
+   "z": 345.42,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "巨行星星系里的轨道船坞，船厂工人大多来自南美。",
+   "facts": {
+    "命名由来": "智利移民以故乡港城瓦尔帕莱索命名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20171028",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w32",
+   "no": "32",
+   "name": "阿尔哈桑港",
+   "en": "Port al-Hasan",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "内航星区",
+   "domain": "溪桥星域",
+   "host": "HD 175541",
+   "planet": "HD 175541 b",
+   "x": 125.058,
+   "y": 7.389,
+   "z": 403.718,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "巨行星星系里的轨道港，负责附近航路的维修和补给。",
+   "facts": {
+    "命名由来": "纪念勘测船长易卜拉欣·哈桑。约 F175，他的“新月号”沿主干绘出了内航星区的航图，这是他最后停靠的港口。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HD%20175541",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w33",
+   "no": "33",
+   "name": "K2-381 / 04",
+   "en": "K2-381 / 04",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "内航星区",
+   "domain": "工旗星域",
+   "host": "K2-381",
+   "planet": "K2-381 c／K2-381 d／K2-381 b",
+   "x": -31.139,
+   "y": -113.24,
+   "z": 460.471,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "封闭农业居住筒绕着星系里的几颗小行星运转，产量稳定。",
+   "facts": {
+    "命名由来": "系统内第四个行政单元。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-381",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w34",
+   "no": "34",
+   "name": "赤鳍鲑湾",
+   "en": "Akahire Bay",
+   "kind": "渔业世界",
+   "status": "稳定航路",
+   "sector": "内航星区",
+   "domain": "工旗星域",
+   "host": "K2-32",
+   "planet": "K2-32 e／K2-32 c／K2-32 d／K2-32 b",
+   "x": -164.813,
+   "y": 140.045,
+   "z": 466.602,
+   "size": 1.0,
+   "tags": [
+    "渔业世界"
+   ],
+   "summary": "轨道人工水域里养着赤鳍鲑，鱼肉颜色鲜红，是有名的特产。",
+   "facts": {
+    "命名由来": "日语“赤鳍”和通用语“港湾”拼在一起的名字。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-32",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w35",
+   "no": "35",
+   "name": "努鲁·卡马乌",
+   "en": "Nuru Kamau",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "内航星区",
+   "domain": "溪桥星域",
+   "host": "K2-139",
+   "planet": "K2-139 b",
+   "x": -4.686,
+   "y": -116.318,
+   "z": 488.121,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "高产的农业栖居地，粮食和种子供应周边的几个殖民地。当地留有异星文明遗迹，吸引过殖民历史学者前来考察。",
+   "facts": {
+    "命名由来": "纪念农艺学家努鲁·卡马乌。约 F185，她带着自己设计的种子库在这里种出了第一季稳定的粮食。",
+    "相关人物": "哈里妮（曾在此做殖民历史考察与异星文明遗迹研究）"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-139",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w36",
+   "no": "36",
+   "name": "K2-379 / 02",
+   "en": "K2-379 / 02",
+   "kind": "采矿世界",
+   "status": "稳定航路",
+   "sector": "内航星区",
+   "domain": "工旗星域",
+   "host": "K2-379",
+   "planet": "K2-379 b",
+   "x": -116.459,
+   "y": -125.199,
+   "z": 569.149,
+   "size": 1.0,
+   "tags": [
+    "采矿世界"
+   ],
+   "summary": "轨道上的矿石分选站，开采星系里的小天体。",
+   "facts": {
+    "命名由来": "后期开拓的标准编号。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-379",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w37",
+   "no": "37",
+   "name": "月角羚场",
+   "en": "Moonhorn Downs",
+   "kind": "畜牧世界",
+   "status": "稳定航路",
+   "sector": "德撒律星区",
+   "domain": "联航星域",
+   "host": "TOI-7189",
+   "planet": "TOI-7189 b",
+   "x": 111.343,
+   "y": 105.953,
+   "z": 607.368,
+   "size": 1.0,
+   "tags": [
+    "畜牧世界"
+   ],
+   "summary": "人工重力牧场里养着一种月白色的工程羚羊，角的形状像弯月。",
+   "facts": {
+    "命名由来": "得名于本地培育的月角羚。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TOI-7189",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w38",
+   "no": "38",
+   "name": "K2-201 / 03",
+   "en": "K2-201 / 03",
+   "kind": "工业世界",
+   "status": "湮灭",
+   "sector": "德撒律星区",
+   "domain": "联航星域",
+   "host": "K2-201",
+   "planet": "K2-201 c／K2-201 b",
+   "x": -40.44,
+   "y": -213.749,
+   "z": 607.81,
+   "size": 1.0,
+   "tags": [
+    "工业世界",
+    "湮灭"
+   ],
+   "summary": "封闭工业站，专门生产造船用的标准模块，人们叫它“201 船坞”。预言家说服政府提前撤离了全部人员，随后这里遭遇了湮灭事件。",
+   "facts": {
+    "命名由来": "系统内第三个行政单元。",
+    "俗名": "201 船坞",
+    "湮灭事件": "约 F445，人员已提前撤离"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-201",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   },
+   "aliases": [
+    "201船坞",
+    "201 船坞"
+   ]
+  },
+  {
+   "id": "w39",
+   "no": "39",
+   "name": "新纳府",
+   "en": "New Nauvoo",
+   "aliases": [
+    "新纳府",
+    "New Nauvoo"
+   ],
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "德撒律星区",
+   "domain": "纳府星域",
+   "host": "航路空间站；采矿关联：K2-293 b",
+   "planet": "世代飞船改建空间站",
+   "x": -44.807,
+   "y": -87.229,
+   "z": 657.393,
+   "size": 1.2,
+   "novel": true,
+   "tags": [
+    "航道中心",
+    "军港扩建"
+   ],
+   "summary": "原本由世代飞船改建的巨大空间站，依赖附近行星 K2-293 b 的采矿业。随着新一波星际拓荒运动，它正成为全新的航道中心，许多天蝎中心的学者、工程师和创业者来到这里；火星生态技术的突破让它成为太阳系与天蝎中心之外最大的空间站，容纳10万人。联邦军队准备在此扩建军港，不少边缘世界的居民来此讨生活。边疆事故赔偿信托里被挪用的钱，变成了这里军港的泊位和炮塔。",
+   "facts": {
+    "形态": "世代飞船改建空间站",
+    "人口": "100,000",
+    "依托": "K2-293 b 采矿业",
+    "军港": "联邦军方扩建中；部分资金来自被挪用的边疆事故赔偿信托"
+   }
+  },
+  {
+   "id": "w40",
+   "no": "40",
+   "name": "德撒律",
+   "en": "Deseret",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "德撒律星区",
+   "domain": "纳府星域",
+   "host": "CoRoT-2",
+   "planet": "CoRoT-2 b",
+   "x": 216.231,
+   "y": -88.282,
+   "z": 655.255,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "太空摩门教徒建立的劳动合作社，以造船闻名。居民住在远离那颗炽热巨行星的轨道设施里。",
+   "facts": {
+    "命名由来": "取自摩门教经典里的地名，意为“蜜蜂”，象征勤劳与合作。",
+    "相关人物": "埃莱娜·基斯佩（社会与迁徙委员）"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/CoRoT-2",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w41",
+   "no": "41",
+   "name": "以挪士",
+   "en": "Enos",
+   "kind": "畜牧世界",
+   "status": "稳定航路",
+   "sector": "德撒律星区",
+   "domain": "丰饶星域",
+   "host": "K2-380",
+   "planet": "K2-380 b",
+   "x": -149.101,
+   "y": -172.159,
+   "z": 780.57,
+   "size": 1.0,
+   "tags": [
+    "畜牧世界"
+   ],
+   "summary": "大型人工重力牧场，是太空摩门教殖民地的肉食和皮毛来源。",
+   "facts": {
+    "命名由来": "摩门经里的人名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-380",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w42",
+   "no": "42",
+   "name": "丰饶地",
+   "en": "Bountiful",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "德撒律星区",
+   "domain": "丰饶星域",
+   "host": "K2-382",
+   "planet": "K2-382 b",
+   "x": -43.591,
+   "y": -199.506,
+   "z": 884.797,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "受控农业世界，太空摩门教殖民地的主要粮仓。",
+   "facts": {
+    "命名由来": "摩门经里的地名，意思是“丰饶之地”。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-382",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w43",
+   "no": "43",
+   "name": "里海之望",
+   "en": "Lehi’s Prospect",
+   "kind": "采矿世界",
+   "status": "稳定航路",
+   "sector": "德撒律星区",
+   "domain": "丰饶星域",
+   "host": "HAT-P-46",
+   "planet": "HAT-P-46 b",
+   "x": 73.857,
+   "y": 158.788,
+   "z": 931.942,
+   "size": 1.0,
+   "tags": [
+    "采矿世界"
+   ],
+   "summary": "开采星系里的小天体，矿石经轨道转运站送往德撒律的船厂。",
+   "facts": {
+    "命名由来": "“里海”是 Lehi（李海）的音译，和地球上的里海没有关系。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HAT-P-46",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w44",
+   "no": "44",
+   "name": "锡安农垦区",
+   "en": "Zion Fields",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "德撒律星区",
+   "domain": "丰饶星域",
+   "host": "K2-202",
+   "planet": "K2-202 b",
+   "x": -118.405,
+   "y": -175.992,
+   "z": 956.526,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "农业轨道栖居群，几代人在这里垦殖出了一片“应许之地”。",
+   "facts": {
+    "命名由来": "取宗教理想中的“锡安”之名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-202",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w45",
+   "no": "45",
+   "name": "摩罗乃",
+   "en": "Moroni",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "基洛伯星区",
+   "domain": "尼腓星域",
+   "host": "HAT-P-45",
+   "planet": "HAT-P-45 b",
+   "x": 101.622,
+   "y": 101.51,
+   "z": 963.383,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "星系外围的船坞和远端物资仓，许多前往边疆的船在这里装满最后一批补给。",
+   "facts": {
+    "命名由来": "摩门经里的天使之名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HAT-P-45",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w46",
+   "no": "46",
+   "name": "尼腓",
+   "en": "Nephi",
+   "aliases": [
+    "尼腓"
+   ],
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "基洛伯星区",
+   "domain": "尼腓星域",
+   "host": "K2-231",
+   "planet": "K2-231 b",
+   "x": 25.945,
+   "y": -227.254,
+   "z": 1022.388,
+   "size": 1.2,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "农业栖居群，也是雅各布之梯的入口。十年一次的窗口打开时，这里会挤满准备远行的人。",
+   "facts": {
+    "命名由来": "摩门经里的先知之名。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-231",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w47",
+   "no": "47",
+   "name": "FT-S1120 / 06",
+   "en": "FT-S1120 / 06",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "基洛伯星区",
+   "domain": "约旦星域",
+   "host": "FT-S1120",
+   "planet": "FT-S1120 的开拓行星",
+   "x": 30.0,
+   "y": 40.0,
+   "z": 1120.0,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "岩质小天体上的自动工厂，居民住在轨道居住区里，人不多，机器很多。",
+   "facts": {
+    "命名由来": "联邦测绘编号加行政编号。"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "w48",
+   "no": "48",
+   "name": "约旦集水地",
+   "en": "Jordan Catchment",
+   "kind": "渔业世界",
+   "status": "稳定航路",
+   "sector": "基洛伯星区",
+   "domain": "约旦星域",
+   "host": "FT-S1190",
+   "planet": "FT-S1190 的开拓行星",
+   "x": -65.0,
+   "y": 50.0,
+   "z": 1190.0,
+   "size": 1.0,
+   "tags": [
+    "渔业世界"
+   ],
+   "summary": "人工调控的水域和循环水产，水利工程是这里的骄傲。",
+   "facts": {
+    "命名由来": "取约旦河的意象，也说明它的用途：集水。"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "w49",
+   "no": "49",
+   "name": "米利暗牧野",
+   "en": "Miriam Downs",
+   "kind": "畜牧世界",
+   "status": "稳定航路",
+   "sector": "基洛伯星区",
+   "domain": "约旦星域",
+   "host": "FT-S1260",
+   "planet": "FT-S1260 的开拓行星",
+   "x": 55.0,
+   "y": -40.0,
+   "z": 1260.0,
+   "size": 1.0,
+   "tags": [
+    "畜牧世界"
+   ],
+   "summary": "改造过的岩质世界，穹顶草场里放牧着工程家畜。",
+   "facts": {
+    "命名由来": "以《圣经》里的米利暗命名。"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "w50",
+   "no": "50",
+   "name": "基洛伯",
+   "en": "Kolob",
+   "aliases": [
+    "基洛伯",
+    "Kolob"
+   ],
+   "kind": "宗教世界",
+   "status": "稳定航路",
+   "sector": "基洛伯星区",
+   "domain": "基洛伯星域",
+   "host": "FT-S1320",
+   "planet": "FT-S1320 的开拓行星",
+   "x": -15.0,
+   "y": 15.0,
+   "z": 1320.0,
+   "size": 1.35,
+   "tags": [
+    "宗教世界"
+   ],
+   "summary": "太空摩门教的圣地。K 型恒星系的第三颗岩质行星，教会聚居在这里，地球化工程已经进行了好几代。它的名字来自教义里离神座最近的那颗星，但它本身并不在银心。",
+   "facts": {
+    "命名由来": "取自摩门教义中离神座最近的星辰“科洛布”。"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "w51",
+   "no": "51",
+   "name": "以诺守望",
+   "en": "Enoch Watch",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "基洛伯星区",
+   "domain": "守望星域",
+   "host": "FT-S1390",
+   "planet": "FT-S1390 的开拓行星",
+   "x": -45.0,
+   "y": 30.0,
+   "z": 1390.0,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "开拓前线的生态穹顶和补给基地，同时负责维护附近的航路。",
+   "facts": {
+    "命名由来": "以《圣经》人物以诺命名，“守望”是它的边防职能。"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "w52",
+   "no": "52",
+   "name": "奥梅加站",
+   "en": "Omega Station",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "基洛伯星区",
+   "domain": "守望星域",
+   "host": "FT-S1470",
+   "planet": "FT-S1470 的开拓行星",
+   "x": 15.0,
+   "y": -12.0,
+   "z": 1470.0,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "一个岩质世界和它的轨道设施，科研人员和维修工人一起住在这里。这是一个世俗共同体，不属于任何教派。",
+   "facts": {
+    "命名由来": "原本是末端科考站的编号“欧米伽”，后来成了常住地的名字。"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "w53",
+   "no": "53",
+   "name": "玄武",
+   "en": "Xuanwu",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "回航星区",
+   "domain": "玄武星域",
+   "host": "K2-155",
+   "planet": "K2-155 c／K2-155 d／K2-155 b",
+   "x": 95.351,
+   "y": -80.089,
+   "z": -202.168,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "早期的生态探测站，后来改成了受控农业基地。",
+   "facts": {
+    "命名由来": "早年中国科考计划留下的名字。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-155",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w54",
+   "no": "54",
+   "name": "奥西里斯",
+   "en": "Osiris",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "回航星区",
+   "domain": "泰坦星域",
+   "host": "K2-332",
+   "planet": "K2-332 b",
+   "x": -81.608,
+   "y": 234.007,
+   "z": -316.305,
+   "size": 1.0,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "偏远的农业栖居群，生态循环系统做得很好。神话计划时期的科考站，后来变成了常住殖民地。",
+   "facts": {
+    "命名由来": "早年埃及生态循环项目留下的名字。",
+    "院校": "奥西里斯大学，一所小大学",
+    "相关人物": "米罗斯拉夫·诺瓦克（出身于此）"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-332",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   },
+   "aliases": [
+    "欧西里斯",
+    "Osiris"
+   ]
+  },
+  {
+   "id": "w55",
+   "no": "55",
+   "name": "普罗米修斯",
+   "en": "Prometheus",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "回航星区",
+   "domain": "泰坦星域",
+   "host": "HIP 41378",
+   "planet": "HIP 41378 b／HIP 41378 c／HIP 41378 d／HIP 41378 e／HIP 41378 f／HIP 41378 g",
+   "x": -78.387,
+   "y": 150.04,
+   "z": -302.526,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "多行星星系里的轨道工业站，主要做能源设备。",
+   "facts": {
+    "命名由来": "早年希腊神话主题的能源研究项目留下的名字。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HIP%2041378",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w56",
+   "no": "56",
+   "name": "雅努斯",
+   "en": "Janus",
+   "kind": "采矿世界",
+   "status": "稳定航路",
+   "sector": "回航星区",
+   "domain": "终端星域",
+   "host": "K2-232",
+   "planet": "K2-232 b／K2-232 c",
+   "x": 126.584,
+   "y": -112.621,
+   "z": -391.24,
+   "size": 1.0,
+   "tags": [
+    "采矿世界"
+   ],
+   "summary": "资源调查站一点点扩展成了轨道采掘共同体。",
+   "facts": {
+    "命名由来": "早年罗马神话主题的探测项目留下的名字。雅努斯是双面的门神。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-232",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w57",
+   "no": "57",
+   "name": "女娲",
+   "en": "Nüwa",
+   "kind": "畜牧世界",
+   "status": "稳定航路",
+   "sector": "回航星区",
+   "domain": "终端星域",
+   "host": "HAT-P-54",
+   "planet": "HAT-P-54 b",
+   "x": 90.035,
+   "y": 72.468,
+   "z": -454.047,
+   "size": 1.0,
+   "tags": [
+    "畜牧世界"
+   ],
+   "summary": "生态种质库和人工重力育种栖居地，保存着上千种家畜的遗传材料。",
+   "facts": {
+    "命名由来": "早年中国神话主题的生命系统试验项目留下的名字。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/HAT-P-54",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w58",
+   "no": "58",
+   "name": "赫斯提亚",
+   "en": "Hestia",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "回航星区",
+   "domain": "终端星域",
+   "host": "TOI-530",
+   "planet": "TOI-530 b",
+   "x": -14.049,
+   "y": 53.388,
+   "z": -482.045,
+   "size": 1.0,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "远航补给站，后来变成了永久维修殖民地。",
+   "facts": {
+    "命名由来": "希腊神话里的炉火女神，象征家园。"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/TOI-530",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w59",
+   "no": "59",
+   "name": "新圣马洛",
+   "en": "Saint-Malo-Neuf",
+   "kind": "渔业世界",
+   "status": "周期可达",
+   "sector": "雁渡星区",
+   "domain": "雨燕星域",
+   "host": "Kepler-560",
+   "planet": "Kepler-560 b",
+   "x": 305.967,
+   "y": 48.113,
+   "z": 176.556,
+   "size": 1.0,
+   "tags": [
+    "渔业世界",
+    "周期可达"
+   ],
+   "summary": "法国沿海移民合作社建立的轨道水产栖居群，养殖耐盐的工程鱼。",
+   "hook": "鱼苗疫病使全港必须在开航前决定隔离还是出口；外销产品以种苗、耐贮加工品和养殖技术为主。",
+   "facts": {
+    "命名由来": "移民以故乡圣马洛命名，意思是“新圣马洛”。",
+    "最近登记人口": 42000,
+    "航路周期（年）": 4,
+    "发航窗（日）": 70,
+    "单程（月）": 10,
+    "航弦环": "R01 雁渡环"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-560",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w60",
+   "no": "60",
+   "name": "潮眠港",
+   "en": "Porto do Sono",
+   "kind": "采矿世界",
+   "status": "周期可达",
+   "sector": "雁渡星区",
+   "domain": "雨燕星域",
+   "host": "Kepler-296",
+   "planet": "Kepler-296 d／Kepler-296 b／Kepler-296 c／Kepler-296 f／Kepler-296 e",
+   "x": 448.136,
+   "y": 168.446,
+   "z": 259.763,
+   "size": 1.0,
+   "tags": [
+    "采矿世界",
+    "周期可达"
+   ],
+   "summary": "说葡萄牙语的冰下海洋世界。人们原本在冰壳下的液态水层里打鱼为生，后来在海床下发现了大量带辐射的高品位矿藏，一夜之间成了暴发户——但钱是拿身体换来的，比起核心星域也依然很穷。联邦对偏远星域工人的劳动保护很不完善，许多矿工因辐射失去生育能力，所以潮眠港的人家常到天鹅一号和三号领养孩子。the A 有不少成员出自这里。",
+   "hook": "矿业合作社需等待十一年一次的出口船；年轻人通常只能在一次成年后的窗口决定去留。",
+   "facts": {
+    "命名由来": "葡萄牙语，意思是“沉睡之港”。",
+    "最近登记人口": 31000,
+    "航路周期（年）": 11,
+    "发航窗（日）": 35,
+    "单程（月）": 15,
+    "航弦环": "R01 雁渡环",
+    "语言": "葡萄牙语",
+    "经济": "原以渔业为主，如今靠海床的放射性矿藏",
+    "相关人物": "威廉（养子，少年时在此下矿）",
+    "特产": "潮眠黑葡萄（后被孔蒂家族买下）"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-296",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w61",
+   "no": "61",
+   "name": "雨燕滩",
+   "en": "Swiftstrand",
+   "kind": "农业世界",
+   "status": "周期可达",
+   "sector": "雁渡星区",
+   "domain": "雨燕星域",
+   "host": "Kepler-1512",
+   "planet": "Kepler-1512 b",
+   "x": 423.647,
+   "y": 131.287,
+   "z": 287.167,
+   "size": 1.0,
+   "tags": [
+    "农业世界",
+    "周期可达"
+   ],
+   "summary": "小型行星上的防护穹顶和人工湿地农场，种着耐盐作物和藻类，种子库撑起了当地的生活。",
+   "hook": "中央的补偿决定到达时，上一届地方议会已经卸任；居民争论旧议会是否有权代表尚未出生的人处分土地。",
+   "facts": {
+    "命名由来": "得名于湿地上成群的雨燕。",
+    "最近登记人口": 27000,
+    "航路周期（年）": 7,
+    "发航窗（日）": 48,
+    "单程（月）": 13,
+    "航弦环": "R01 雁渡环"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-1512",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w62",
+   "no": "62",
+   "name": "K2-285 / 07",
+   "en": "K2-285 / 07",
+   "kind": "工业世界",
+   "status": "湮灭",
+   "sector": "外潮星区",
+   "domain": "南汀星域",
+   "host": "K2-285",
+   "planet": "K2-285 e",
+   "x": 260.964,
+   "y": -407.248,
+   "z": 146.597,
+   "size": 1.0,
+   "tags": [
+    "工业世界",
+    "湮灭"
+   ],
+   "summary": "轨道居住环和自动加工厂，人们叫它“邦德之环空间站”，靠回收、零件再制造和封闭农业自给自足。预言家说服政府提前撤离了人员，随后这里遭遇了湮灭事件。",
+   "hook": "撤离的一万八千人里，很多人手里拿的还是破产承包商登记的企业身份。他们算不算联邦公民、该安置在哪里，至今没有说法。",
+   "facts": {
+    "命名由来": "第七个行政设施编号。",
+    "最近登记人口": 18000,
+    "航路周期（年）": 13,
+    "发航窗（日）": 24,
+    "单程（月）": 18,
+    "航弦环": "R03 南汀环",
+    "俗名": "邦德之环空间站",
+    "湮灭事件": "约 F445，人员已提前撤离"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-285",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   },
+   "aliases": [
+    "邦德之环",
+    "邦德之环空间站"
+   ]
+  },
+  {
+   "id": "w63",
+   "no": "63",
+   "name": "塔玛拉·奥尔洛娃",
+   "en": "Tamara Orlova",
+   "kind": "采矿世界",
+   "status": "周期可达",
+   "sector": "北帷星区",
+   "domain": "奥尔洛娃星域",
+   "host": "K2-407",
+   "planet": "K2-407 c／K2-407 b",
+   "x": -371.94,
+   "y": 322.015,
+   "z": 515.036,
+   "size": 1.0,
+   "tags": [
+    "采矿世界",
+    "周期可达"
+   ],
+   "summary": "采掘共同体，居民住在轨道设施和有屏蔽的地下区里。",
+   "hook": "一批高价值矿料足以偿债，却需要拆除备份生命支持设备才能装船；总督与居民委员会意见相反。",
+   "facts": {
+    "命名由来": "纪念勘探船长塔玛拉·奥尔洛娃。她开创了窗口导航，在北帷环上找到了这片富矿，三年后在第三次窗口航行中失踪。",
+    "最近登记人口": 12000,
+    "航路周期（年）": 19,
+    "发航窗（日）": 18,
+    "单程（月）": 22,
+    "航弦环": "R04 北帷环"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-407",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w64",
+   "no": "64",
+   "name": "归墟",
+   "en": "Guixu",
+   "kind": "工业世界",
+   "status": "周期可达",
+   "sector": "回航星区",
+   "domain": "归墟星域",
+   "host": "K2-343",
+   "planet": "K2-343 c／K2-343 b",
+   "x": -40.628,
+   "y": 324.017,
+   "z": -432.543,
+   "size": 1.0,
+   "tags": [
+    "工业世界",
+    "周期可达"
+   ],
+   "summary": "反银心一侧的科学站，后来变成了常住的维修基地，做天体物理观测，也回收报废设备。",
+   "hook": "研究拨款的批准、取消与恢复分乘不同邮船抵达，本地科研人员不得不判断哪份命令在法律上有效。",
+   "facts": {
+    "命名由来": "取自中国神话里万水归流的无底之海。",
+    "最近登记人口": 9000,
+    "航路周期（年）": 23,
+    "发航窗（日）": 16,
+    "单程（月）": 20,
+    "航弦环": "R05 归墟环"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/K2-343",
+   "editor_notes": {
+    "坐标锚点": "观测宿主"
+   }
+  },
+  {
+   "id": "w65",
+   "no": "65",
+   "name": "圣布里吉德",
+   "en": "Saint Brigid",
+   "kind": "宗教世界",
+   "status": "失联",
+   "sector": "外潮星区",
+   "domain": "长夜星域",
+   "host": "FT-P0780",
+   "planet": "FT-P0780 的开拓行星",
+   "x": -350.0,
+   "y": -190.0,
+   "z": 780.0,
+   "size": 1.0,
+   "tags": [
+    "宗教世界",
+    "失联"
+   ],
+   "summary": "寒冷的岩质世界。修会医院、穹顶村庄和农艺学校构成一个小小的共同体，不信教的居民在这里也享有同样的权利。约 F445 年，它和联邦失去了联系，预言家事先说中了这一次。",
+   "hook": "失联前最后一班船带回了修会医院的病历。有人在里面读到，那几个月里，好几个病人说自己做了同一个梦。",
+   "facts": {
+    "命名由来": "以爱尔兰的圣布里吉德命名。",
+    "最近登记人口": 14000,
+    "航路周期（年）": 29,
+    "发航窗（日）": 12,
+    "单程（月）": 24,
+    "航弦环": "R06 长夜西环",
+    "湮灭事件": "约 F445，失联；被预言家提前预言"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "w66",
+   "no": "66",
+   "name": "蓝绒鹿原",
+   "en": "Bluefleece Downs",
+   "kind": "畜牧世界",
+   "status": "周期可达",
+   "sector": "外潮星区",
+   "domain": "长夜星域",
+   "host": "FT-P0930",
+   "planet": "FT-P0930 的开拓行星",
+   "x": 310.0,
+   "y": -290.0,
+   "z": 930.0,
+   "size": 1.0,
+   "tags": [
+    "畜牧世界",
+    "周期可达"
+   ],
+   "summary": "穹顶牧场里养着蓝绒鹿，出口冻存胚胎、遗传材料和耐贮存的纤维。",
+   "hook": "一次流产潮威胁唯一繁育群；当地能自行维持兽医服务，但缺少诊断一种新遗传病的专用设备。",
+   "facts": {
+    "命名由来": "得名于本地的蓝绒鹿。",
+    "最近登记人口": 22000,
+    "航路周期（年）": 17,
+    "发航窗（日）": 21,
+    "单程（月）": 20,
+    "航弦环": "R07 长夜东环"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "w67",
+   "no": "67",
+   "name": "新苏瓦",
+   "en": "New Suva",
+   "kind": "渔业世界",
+   "status": "湮灭",
+   "sector": "外潮星区",
+   "domain": "远汀星域",
+   "host": "FT-P1120",
+   "planet": "FT-P1120 的开拓行星",
+   "x": -430.0,
+   "y": -80.0,
+   "z": 1120.0,
+   "size": 1.0,
+   "tags": [
+    "渔业世界",
+    "湮灭"
+   ],
+   "summary": "人工环礁和水产生境。太平洋岛国的移民把港口社区的传统带到了这里。约 F445 年，这里发生了生态灭绝，预言家事先说中了时间和条件。",
+   "hook": "灭绝之后，再也没有人回来重谈港口产权。首批签约人的继承人散在联邦各处，有人至今还在打官司，争一片已经没有鱼的海。",
+   "facts": {
+    "命名由来": "以斐济首都苏瓦命名。",
+    "最近登记人口": 11000,
+    "航路周期（年）": 37,
+    "发航窗（日）": 9,
+    "单程（月）": 26,
+    "航弦环": "R08 远汀西环",
+    "湮灭事件": "约 F445，生态灭绝；被预言家提前预言"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "w68",
+   "no": "68",
+   "name": "候渡",
+   "en": "Last Ferry",
+   "kind": "农业世界",
+   "status": "待复联",
+   "sector": "外潮星区",
+   "domain": "远汀星域",
+   "host": "FT-P1280",
+   "planet": "FT-P1280 的开拓行星",
+   "x": 30.0,
+   "y": -497.0,
+   "z": 1280.0,
+   "size": 1.0,
+   "tags": [
+    "农业世界",
+    "待复联"
+   ],
+   "summary": "多层农业和种质保存殖民地。它的人工生态可以长期独立运转，每一班船带来的不是粮食，而是稀缺的技术和人。",
+   "hook": "上一次预计的窗口在约 F431 年落空，最后一次实地联络已是六十八年前。下一次可能的窗口还要等二十八年，没人知道那里的人是否还活着。",
+   "facts": {
+    "命名由来": "英语，意思是“最后一班渡船”。",
+    "最近登记人口": 6500,
+    "航路周期（年）": 48,
+    "发航窗（日）": 6,
+    "单程（月）": 28,
+    "航弦环": "R09 远汀东环",
+    "失联": "约 F431，预计窗口落空；最后一次实地联络约 F383",
+    "下一次可能的窗口": "约 F479"
+   },
+   "editor_notes": {
+    "坐标锚点": "虚构系统"
+   }
+  },
+  {
+   "id": "earth",
+   "no": "",
+   "name": "地球",
+   "en": "Earth",
+   "aliases": [
+    "新伦敦",
+    "地球"
+   ],
+   "kind": "花园世界",
+   "status": "稳定航路",
+   "sector": "母星直属星区",
+   "domain": "太阳星域",
+   "host": "太阳系",
+   "planet": "",
+   "x": 0.0,
+   "y": 0.0,
+   "z": 0.0,
+   "size": 1.6,
+   "solar": true,
+   "novel": true,
+   "tags": [
+    "花园世界"
+   ],
+   "summary": "人类文明的母星与联邦政治中心。耻辱战争几乎摧毁了它的生态：温室效应被推到接近极限，海平面上升约八米，北大西洋环流停摆。四百五十年的修复之后，它重新成为花园世界——重建的超级都市新伦敦、霓约克、东安（新东京）、上海第三重建区，以及战后在赤道上新建的启程城夸赫里尼，被森林与绿化包围，大部分工业已迁往小行星带。但生态恢复至今仍未完成。",
+   "facts": {
+    "地位": "联邦首都星，议会与终审法院所在",
+    "研究机构": "联邦大学、新伦敦大学、哥伦比亚大学、联邦研究所、存续实验室",
+    "生态": "北大西洋环流已崩溃；不列颠冬季严寒，城市依赖地下供热管网",
+    "海平面": "比战前上升约 8 米；三角洲与沿海低地大片沦为浅海",
+    "超级都市": "新伦敦 · 霓约克（新纽约） · 东安（新东京） · 上海第三重建区 · 夸赫里尼（启程城，战后新建）"
+   }
+  },
+  {
+   "id": "scorpius-central",
+   "no": "",
+   "name": "天蝎中心",
+   "en": "Scorpius Central",
+   "aliases": [
+    "天蝎中心",
+    "中心",
+    "Scorpius Central"
+   ],
+   "kind": "花园世界",
+   "status": "稳定航路",
+   "sector": "天蝎星区",
+   "domain": "中心星域",
+   "host": "GJ 667 C",
+   "planet": "",
+   "x": -11.146,
+   "y": 0.581,
+   "z": 20.824,
+   "size": 1.7,
+   "novel": true,
+   "tags": [
+    "花园世界"
+   ],
+   "summary": "格利泽667 C 星 h 行星，被简称为“中心”。天蝎主干航道的核心锚点，位于天蝎航线与多条宇宙弦的交汇点附近，经航道抵达地球只需一个月——事实上的人类第二中心，花园世界。与最大的工业世界灰铁星同处一个恒星系。",
+   "facts": {
+    "宿主": "格利泽667 C（天蝎座）",
+    "距地球": "约22–24光年",
+    "地位": "事实上的第二中心 · 主干殖民地之首；正式政治副中心地位仍在争取",
+    "研究机构": "格利泽大学 · 银河学院 · 新人类研究院",
+    "相关人物": "弗里斯顿、米蕾·恩加塔（航路与交通委员）",
+    "政治": "宇宙边疆党的大本营",
+    "建立": "F45；建立之初约五万人，第一个选举地方议会的太空殖民地（新伊甸对此有争议）"
+   }
+  },
+  {
+   "id": "golgotha",
+   "no": "",
+   "name": "各各他",
+   "en": "Golgotha",
+   "aliases": [
+    "各各它",
+    "新各各他",
+    "新梵蒂冈",
+    "格格它"
+   ],
+   "kind": "宗教世界",
+   "status": "稳定航路",
+   "sector": "鲸鱼星区",
+   "domain": "天仓星域",
+   "host": "tau Cet",
+   "planet": "f",
+   "x": 1.517,
+   "y": -11.264,
+   "z": -2.986,
+   "size": 1.3,
+   "novel": true,
+   "tags": [
+    "宗教世界"
+   ],
+   "summary": "鲸鱼座τ星（天仓五）f 行星，位于宜居带外缘，气候偏冷。耻辱战争中地中海被核弹重创，宗座被迫迁往殖民地，在此建立新梵蒂冈。宗教世界，靠近多条曲率航道，与最大的农业世界太平星（天仓五 e）同系。宗座研究院参与天堂支点与星门研究。全星约五分之一的土地属于古老的孔蒂家族。",
+   "facts": {
+    "首都": "新梵蒂冈",
+    "宿主": "鲸鱼座τ（天仓五）",
+    "距地球": "约12光年",
+    "研究机构": "宗座研究院 · 圣座大学 · 天仓大学",
+    "相关人物": "艾迪",
+    "别名": "新各各他 · 各各它",
+    "大贵族": "孔蒂家族（拥有全星约20%的土地）",
+    "行星": "天仓五 f（宜居带外缘）"
+   }
+  },
+  {
+   "id": "gray-iron",
+   "no": "",
+   "name": "灰铁星",
+   "en": "Gray Iron",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "天蝎星区",
+   "domain": "中心星域",
+   "host": "GJ 667 C",
+   "planet": "",
+   "x": -11.146,
+   "y": 0.581,
+   "z": 20.824,
+   "size": 1.2,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "天蝎中心同一个恒星系里的工业世界，也是联邦最大的工业世界。人们常说，天蝎中心的花园生活，有一大半是灰铁星的烟尘换来的。",
+   "facts": {
+    "相关人物": "阿米娜·迪奥普（殖民与自治事务委员）"
+   },
+   "editor_notes": {
+    "坐标锚点": "设定"
+   }
+  },
+  {
+   "id": "taiping",
+   "no": "",
+   "name": "太平星",
+   "en": "Taiping",
+   "kind": "农业世界",
+   "status": "稳定航路",
+   "sector": "鲸鱼星区",
+   "domain": "天仓星域",
+   "host": "tau Cet",
+   "planet": "e",
+   "x": 1.517,
+   "y": -11.264,
+   "z": -2.986,
+   "size": 1.2,
+   "tags": [
+    "农业世界"
+   ],
+   "summary": "天仓五 e，位于宜居带内缘、气候温暖，各各他同一个恒星系里的农业世界，也是联邦最大的农业世界，为宗座和附近的航路供应粮食。",
+   "facts": {
+    "相关人物": "奥马尔·哈达德（外交与成员文明委员）",
+    "行星": "天仓五 e（宜居带内缘）"
+   },
+   "editor_notes": {
+    "坐标锚点": "设定"
+   }
+  },
+  {
+   "id": "swan-3",
+   "no": "",
+   "name": "天鹅三号",
+   "en": "Swan III",
+   "aliases": [
+    "天鹅三号",
+    "Kepler-186f",
+    "Kepler-186 f"
+   ],
+   "kind": "渔业世界",
+   "status": "周期可达",
+   "sector": "天鹅星区",
+   "domain": "天鹅星域",
+   "host": "Kepler-186 f",
+   "planet": "",
+   "x": 488.969,
+   "y": 82.321,
+   "z": 299.407,
+   "size": 1.3,
+   "novel": true,
+   "tags": [
+    "渔业世界",
+    "周期可达"
+   ],
+   "summary": "Kepler-186 f。一颗被红矮星潮汐锁定的“眼睛行星”，表面几乎全是海洋，人类居住在晨昏带附近的群岛上，水产丰富。人口最多的主岛约五万人，山多平地少，像旧时代的夏威夷；乔恩娜岛上有殖民地唯一的孤儿院，本地人叫它孤儿岛。本土的“伞怪”平时跟着风暴和高空气流在天上飘，雨季翅膜被雨水泡沉时才落到岛上觅食。50光年内没有其他殖民地，也没有高中。预言家与威廉都在孤儿岛上长大。",
+   "facts": {
+    "宿主": "Kepler-186（红矮星）",
+    "星球类型": "潮汐锁定眼睛行星 · 全球海洋",
+    "居住带": "晨昏带群岛：主岛（政务府，约5万人）、乔恩娜岛（孤儿岛）等",
+    "本土生物": "伞怪（高空浮游巨兽，雨季落地觅食）",
+    "引入物种": "火星羊（阿明博士带来）",
+    "航路": "周期性通路；约 F431 年后港口失配，11年未开窗",
+    "相关人物": "Dr. Astrea · 威廉 · 安妮·弗莱明 · 阿明博士 · Jervis",
+    "航弦环": "R02 天鹅环"
+   }
+  },
+  {
+   "id": "swan-1",
+   "no": "",
+   "name": "天鹅一号",
+   "en": "Swan I",
+   "aliases": [
+    "天鹅一号"
+   ],
+   "kind": "工业世界",
+   "status": "周期可达",
+   "sector": "天鹅星区",
+   "domain": "天鹅星域",
+   "host": "天鹅座",
+   "planet": "",
+   "x": 410.0,
+   "y": 80.0,
+   "z": 440.0,
+   "size": 1.0,
+   "novel": true,
+   "tags": [
+    "工业世界",
+    "周期可达"
+   ],
+   "summary": "气态巨行星阿特拉斯的一颗卫星，天鹅星区的中心。比天鹅三号小，宜居带却大得多；气候寒冷，地热活动频繁，雪是灰色的。有天文台和星区唯一的高中，船坞和反应堆在边疆一带很有名。天鹅二号毁灭后接收了大量孤儿。约 F446 年，开拓计划在这里建设的航路信标站第三反应堆冷却回路破裂，312人遇难。文师傅和女儿小满来自这里，Astrea 也在这里读完了高中。",
+   "facts": {
+    "母行星": "气态巨行星阿特拉斯",
+    "气候": "寒冷；地热活动频繁，灰色的雪",
+    "地位": "天鹅星区中心；有天文台和高中",
+    "相关人物": "文师傅 · 文小满 · Dr. Astrea（高中）",
+    "事件": "航路信标站第三反应堆事故（约 F446，312人遇难）",
+    "航弦环": "R02 天鹅环"
+   }
+  },
+  {
+   "id": "swan-2",
+   "no": "",
+   "name": "天鹅二号",
+   "en": "Swan II",
+   "aliases": [
+    "天鹅二号"
+   ],
+   "kind": "灾毁世界",
+   "status": "灾毁",
+   "sector": "天鹅星区",
+   "domain": "天鹅星域",
+   "host": "天鹅座",
+   "planet": "",
+   "x": 450.0,
+   "y": 80.0,
+   "z": 525.0,
+   "size": 1.0,
+   "novel": true,
+   "tags": [
+    "灾毁世界"
+   ],
+   "summary": "毁于一场自然灾害的殖民地。幸存的孩子被一号和三号收养，孤儿岛上的许多孩子都来自这里。",
+   "facts": {
+    "航弦环": "R02 天鹅环（遗址）"
+   },
+   "editor_notes": {
+    "坐标锚点": "设定"
+   }
+  },
+  {
+   "id": "mammon",
+   "no": "",
+   "name": "玛门",
+   "en": "Mammon",
+   "aliases": [
+    "玛门"
+   ],
+   "kind": "黑洞枢纽",
+   "status": "特殊航路",
+   "sector": "特殊航路",
+   "domain": "雅各布之梯",
+   "host": "（黑洞）",
+   "planet": "",
+   "x": 100.0,
+   "y": 590.0,
+   "z": 1050.0,
+   "size": 1.1,
+   "tags": [
+    "黑洞枢纽",
+    "雅各布之梯：10年周期"
+   ],
+   "summary": "雅各布之梯与麦哲伦弦交汇处的黑洞。航船在这里借黑洞的引力弹弓调整速度和方向，转入麦哲伦弦。它离主干约 598 光年，比一般殖民地的可达范围更远。",
+   "facts": {},
+   "editor_notes": {
+    "坐标锚点": "设定"
+   }
+  },
+  {
+   "id": "jacobs-ladder",
+   "no": "",
+   "name": "雅各布之梯",
+   "en": "Jacob’s Ladder",
+   "aliases": [
+    "雅各布之梯"
+   ],
+   "kind": "周期航路",
+   "status": "特殊航路",
+   "sector": "特殊航路",
+   "domain": "雅各布之梯",
+   "host": "（宇宙弦）",
+   "planet": "",
+   "x": 40.0,
+   "y": 300.0,
+   "z": 1035.0,
+   "size": 1.1,
+   "tags": [
+    "周期航路"
+   ],
+   "summary": "一条与银盘呈大角度的罕见宇宙弦，从 46 号尼腓接入，十年一个周期，在玛门接上麦哲伦弦。",
+   "facts": {},
+   "editor_notes": {
+    "坐标锚点": "设定"
+   }
+  },
+  {
+   "id": "hephaestus",
+   "no": "",
+   "name": "赫菲斯托斯 / 求知者",
+   "en": "Hephaestus / Seeker",
+   "aliases": [
+    "赫菲斯托斯",
+    "求知者",
+    "塔罗斯",
+    "Talos"
+   ],
+   "kind": "域外前哨",
+   "status": "特殊航路",
+   "sector": "域外",
+   "domain": "麦哲伦远征",
+   "host": "白矮星（大麦哲伦星系）",
+   "planet": "",
+   "x": -128785.0,
+   "y": -85409.7,
+   "z": -28073.0,
+   "size": 1.2,
+   "group": "remote",
+   "tags": [
+    "域外前哨"
+   ],
+   "summary": "大麦哲伦星系（LMC）外侧盘区的一颗白矮星。已知气态行星塔罗斯（Talos）有5颗卫星；“求知者”无人前哨站环绕塔罗斯运行，搭载实验性星门，是人类最遥远的人造物体。约16万光年，航路单程约70年，不属于联邦实际行政管辖。",
+   "facts": {
+    "航线": "尼腓 → 雅各布之梯（10年周期） → 玛门 → 麦哲伦弦 → 赫菲斯托斯",
+    "距离": "约16万光年",
+    "单程": "约70年",
+    "设施": "“求知者”无人前哨站 · 实验星门",
+    "运营": "联邦实验室"
+   }
+  },
+  {
+   "id": "hermes",
+   "no": "",
+   "name": "赫尔墨斯深空科考站",
+   "en": "Hermes Deep-Space Research Station",
+   "aliases": [
+    "赫尔墨斯深空科考站",
+    "赫尔墨斯"
+   ],
+   "kind": "科考站",
+   "status": "科考站",
+   "sector": "定居疆域之外",
+   "domain": "联邦科研项目",
+   "host": "未命名恒星系",
+   "planet": "",
+   "x": 900.0,
+   "y": 400.0,
+   "z": 8000.0,
+   "size": 1.2,
+   "group": "explore",
+   "tags": [
+    "科考站",
+    "科考航路；不保证民用稳定通航"
+   ],
+   "summary": "银河系内的深空科考站，负责测绘航路、评估恒星资源、监测宇宙弦的漂移。站点自动运行，科研人员按任务轮换，没有常住人口。",
+   "facts": {},
+   "editor_notes": {
+    "坐标锚点": "虚构示意"
+   }
+  },
+  {
+   "id": "farwatch",
+   "no": "",
+   "name": "远望二万",
+   "en": "Farwatch 20000",
+   "aliases": [
+    "远望二万"
+   ],
+   "kind": "科考站",
+   "status": "科考站",
+   "sector": "定居疆域之外",
+   "domain": "联邦科研项目",
+   "host": "未命名恒星系",
+   "planet": "",
+   "x": 0.0,
+   "y": 0.0,
+   "z": 20000.0,
+   "size": 1.2,
+   "group": "explore",
+   "tags": [
+    "科考站",
+    "科考航路；不保证民用稳定通航"
+   ],
+   "summary": "人类沿主干方向走得最远的地方，距离地球约两万光年。这里只有一座无人科考站，记录航路状态和深空背景。求知者仍然是人类最遥远的人造物体。",
+   "facts": {},
+   "editor_notes": {
+    "坐标锚点": "虚构示意"
+   }
+  },
+  {
+   "id": "moon",
+   "no": "",
+   "name": "月球",
+   "en": "Moon",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "母星直属星区",
+   "domain": "太阳星域",
+   "host": "太阳系",
+   "planet": "",
+   "x": 0.0,
+   "y": 0.0,
+   "z": 0.0,
+   "size": 1.0,
+   "solar": true,
+   "novel": true,
+   "tags": [
+    "太阳系节点"
+   ],
+   "summary": "地球的天然卫星，月球防卫军的地盘：静海基地、爱情湾旅游区与月背的汤姆孙环形山指挥中心。《千金绑架案》中，弗莱明中校在静海被勒令行政休假，又带着幸存者皮特·罗森逃离了月球。",
+   "facts": {
+    "设施": "静海基地 · 爱情湾旅游区 · 汤姆孙环形山指挥中心",
+    "驻军": "月球防卫军（兰姆号）"
+   }
+  },
+  {
+   "id": "mars",
+   "no": "",
+   "name": "火星",
+   "en": "Mars",
+   "aliases": [
+    "火星"
+   ],
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "母星直属星区",
+   "domain": "太阳星域",
+   "host": "太阳系",
+   "planet": "",
+   "x": 0.0,
+   "y": 0.0,
+   "z": 0.0,
+   "size": 1.0,
+   "solar": true,
+   "novel": true,
+   "tags": [
+    "工业世界"
+   ],
+   "summary": "联邦自治领。地球化工程已持续五百五十余年：初生磁场、北半球浅海、改造蓝藻释氧，气压约为地球的30%，可以脱下压力服但仍需呼吸辅助。被红土染成锈红色的火星羊、红星红藻与火星苔原构成初级生态。“绿火星”是所有火星人的梦想。",
+   "facts": {
+    "政治地位": "自治领（独立政府）",
+    "地球化进度": "400年；原始磁场形成，北半球浅海",
+    "大气": "约 0.3 个地球大气压，需辅助呼吸设备",
+    "标志物种": "火星羊 · 红星红藻 · 火星苔原",
+    "研究机构": "水手谷大学（通称火星大学） · 奠基大学 · 奥林匹克研究院",
+    "相关人物": "阿明博士 · 爱德华·哈灵顿（求学）"
+   }
+  },
+  {
+   "id": "kepler-62f",
+   "no": "69",
+   "name": "海隅",
+   "en": "Haiyu · Kepler-62 f",
+   "aliases": [
+    "Kepler-62f",
+    "Kepler-62 f",
+    "海隅"
+   ],
+   "kind": "渔业世界",
+   "status": "周期可达",
+   "sector": "外包络特殊航路",
+   "domain": "星域待定",
+   "host": "Kepler-62",
+   "planet": "Kepler-62 f",
+   "x": 761.784,
+   "y": 314.549,
+   "z": 532.664,
+   "size": 1.15,
+   "tags": [
+    "渔业世界",
+    "周期可达"
+   ],
+   "summary": "Kepler-62 f，通称“海隅”，意思是海的尽头。资源丰富的边缘殖民地，群岛城市散布在海面上，居民靠渔业自给自足。通路五十年才开一次，跨代的联系是常态，一些本地人甚至不认为自己属于联邦。约 F420 年，赶往这里的探索船星辰女神号在天鹅环上失事。",
+   "facts": {
+    "航路周期（年）": 50,
+    "行政状态": "常住殖民地。名义上归联邦管辖，但本地人的认同另有归属。",
+    "航弦环": "R10 海隅环",
+    "命名由来": "中文“海隅”，海的尽头；它所在的弦环也因此叫海隅环。",
+    "事件": "星辰女神号事故（约 F420）"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-62",
+   "editor_notes": {
+    "坐标锚点": "观测宿主；航路为设定",
+    "观测依据": "宿主距离与位置取NASA Exoplanet Archive；资源、海洋、殖民史及宇宙弦通航机制均为本作虚构设定。",
+    "制图说明": "第一象限；常规定居及500光年周期边疆包络之外、探索圆柱之内。本版仅显示世界节点，不绘制连接线；实际航路入口与中继节点待定。"
+   }
+  },
+  {
+   "id": "paradise-lost",
+   "no": "70",
+   "name": "失乐园",
+   "en": "Paradise Lost",
+   "aliases": [
+    "失乐园",
+    "Kepler-442 b",
+    "Kepler-442b"
+   ],
+   "kind": "失联世界",
+   "status": "失联",
+   "sector": "外包络特殊航路",
+   "domain": "星域待定",
+   "host": "Kepler-442",
+   "planet": "Kepler-442 b",
+   "x": 880.032,
+   "y": 308.614,
+   "z": 744.998,
+   "size": 1.15,
+   "tags": [
+    "失联世界",
+    "失联／待重联"
+   ],
+   "summary": "早期记载说这里资源极其丰富，一度被视为天蝎中心之外的人类第三中心。一次意外的黑洞融合产生的引力波，改变了通往这里的宇宙弦，原本一年一开的通路变成两百年一开，此后便失去了联系。下一个窗口越来越近，关于失乐园的传闻也越来越多：有人说那里的技术已经超过了联邦，也有人说居民在乐园里堕落成了只知享乐的野兽。联邦正准备重新委派一位总督，在短暂的窗口里尝试恢复联系。",
+   "facts": {
+    "航路周期（年）": 200,
+    "旧周期（年）": 1,
+    "行政状态": "历史殖民地，现状不明。新总督的委派只是重联计划的一部分。",
+    "航弦环": "R11 失乐园环"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-442",
+   "editor_notes": {
+    "坐标锚点": "观测宿主；航路为设定",
+    "观测依据": "宿主距离与位置取NASA Exoplanet Archive；资源、海洋、殖民史及宇宙弦通航机制均为本作虚构设定。",
+    "制图说明": "第一象限；常规定居及500光年周期边疆包络之外、探索圆柱之内。本版仅显示世界节点，不绘制连接线；实际航路入口与中继节点待定。",
+    "待定": "开窗具体日期、窗口持续时间和单程航行时间尚未设定。"
+   }
+  },
+  {
+   "id": "kepler-452b",
+   "no": "71",
+   "name": "Kepler-452 b",
+   "en": "Kepler-452 b",
+   "aliases": [
+    "Kepler-452b"
+   ],
+   "kind": "待开发世界",
+   "status": "待开发",
+   "sector": "外包络特殊航路",
+   "domain": "星域待定",
+   "host": "Kepler-452",
+   "planet": "Kepler-452 b",
+   "x": 1500.704,
+   "y": 312.097,
+   "z": 942.681,
+   "size": 1.15,
+   "tags": [
+    "待开发世界",
+    "待开发／周期通路"
+   ],
+   "summary": "因为矿产丰富，被列为未来的开发目标。通往这里的只有一条八十年一开的不稳定通路，还没有人定居。最近的探索热让这类世界重新被人想起。",
+   "facts": {
+    "航路周期（年）": 80,
+    "行政状态": "资源储备目标，尚未设立殖民行政机构。",
+    "航弦环": "R12 远望环"
+   },
+   "source": "https://exoplanetarchive.ipac.caltech.edu/overview/Kepler-452",
+   "editor_notes": {
+    "坐标锚点": "观测宿主；航路为设定",
+    "观测依据": "宿主距离与位置取NASA Exoplanet Archive；资源、海洋、殖民史及宇宙弦通航机制均为本作虚构设定。",
+    "制图说明": "第一象限；常规定居及500光年周期边疆包络之外、探索圆柱之内。本版仅显示世界节点，不绘制连接线；实际航路入口与中继节点待定。",
+    "待定": "开窗具体日期、窗口持续时间和单程航行时间尚未设定。"
+   }
+  },
+  {
+   "id": "survival-station",
+   "no": "",
+   "name": "存续空间站",
+   "en": "Survival Station",
+   "aliases": [
+    "存续空间站",
+    "空间站"
+   ],
+   "kind": "科考站",
+   "status": "稳定航路",
+   "sector": "母星直属星区",
+   "domain": "太阳星域",
+   "host": "太阳系 · 地日L2",
+   "planet": "晕轮轨道",
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "size": 1.0,
+   "solar": true,
+   "novel": true,
+   "tags": [
+    "存续实验室",
+    "天堂支点"
+   ],
+   "summary": "存续实验室的主站，沿地日第二拉格朗日点附近的晕轮轨道运行，与地球的单程通讯延迟约五秒。超级计算平台“天堂支点”的主机安装在这里。ama-7 在这里长大。",
+   "facts": {
+    "位置": "地日 L2 晕轮轨道，距地球约150万公里",
+    "通讯延迟": "约5秒（单程）",
+    "主要设施": "天堂支点主机 · 生物实验室（章鱼爱德华） · 各研究组",
+    "往返地球": "聚变快船约5小时",
+    "105号事件": "补给船被劫持、被兰姆号击毁，碎片雨击中外层防护"
+   }
+  },
+  {
+   "id": "europa",
+   "no": "",
+   "name": "木卫二",
+   "en": "Europa",
+   "kind": "工业世界",
+   "status": "稳定航路",
+   "sector": "母星直属星区",
+   "domain": "太阳星域",
+   "host": "太阳系 · 木星",
+   "planet": "木卫二",
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "size": 0.8,
+   "solar": true,
+   "tags": [
+    "工业世界",
+    "独立生态系统"
+   ],
+   "summary": "木星的卫星，太阳系外侧的工业世界。冰壳之下是太阳系仅有的两个独立生态系统之一，一种为冰下殖民地改良的土豆曾让它几乎崩溃。去冰下殖民地要从地表航站楼坐两个小时的升降梯，穿过最薄处约二十公里的冰壳；冰层下面没有早晨，殖民地每天把灯开到最亮，就当是早晨。生物组组长陆和她的导师王桦都出生在这里。",
+   "facts": {
+    "冰壳": "最薄处约二十公里",
+    "冰下殖民地": "从地表航站楼坐两个小时升降梯穿过冰壳；冰层下面没有早晨，殖民地每天把灯开到最亮当作早晨",
+    "冰下生活": "居民普遍缺维生素：补光种出的橘子补维生素 C，紫外灯下晒过的蘑菇补维生素 D",
+    "研究机构": "欧罗巴研究所（海洋微生物与封闭生态循环）",
+    "本土生态": "独立起源的无磷生命，详见附录《欧罗巴生物学概论》",
+    "灭绝物种": "玻璃硫虫（雪铃）",
+    "相关人物": "陆、王桦、米罗斯拉夫·诺瓦克"
+   }
+  }
+ ],
+ "solar": {
+  "note": "太阳系按真实比例绘制（1 天文单位约等于 1.58×10⁻⁵ 光年）。行星按圆轨道计算，位置取 t0_days 那一天；黄道面的朝向由真实天球坐标换算而来。",
+  "t0_days": 8382,
+  "bodies": [
+   {
+    "id": "sun",
+    "name": "太阳",
+    "en": "Sun",
+    "type": "恒星",
+    "radius_km": 696000,
+    "color": "#FFD27A",
+    "star": true,
+    "summary": "联邦坐标的原点。所有世界的 x、y、z 都从这里量起。",
+    "pole": [
+     286.13,
+     63.87
+    ]
+   },
+   {
+    "id": "mercury",
+    "name": "水星",
+    "en": "Mercury",
+    "type": "行星",
+    "a_au": 0.387,
+    "L0": 252.25,
+    "n": 4.09233,
+    "radius_km": 2440,
+    "color": "#B8B0A8",
+    "summary": "离太阳最近的行星，白天的一面能把铅烤化。这里只有几座无人的太阳能采集站。"
+   },
+   {
+    "id": "venus",
+    "name": "金星",
+    "en": "Venus",
+    "type": "行星",
+    "a_au": 0.723,
+    "L0": 181.98,
+    "n": 1.60213,
+    "radius_km": 6052,
+    "color": "#E8C97A",
+    "texture": "assets/img/venus.jpg",
+    "summary": "诗万那条二十万信用币的“金星牦牛毛限定”披肩说明，金星上有人在养牦牛——多半是在高空浮空城的封闭牧场里。限定批次的牦牛毛，是地球上流社会的奢侈品。"
+   },
+   {
+    "id": "earth",
+    "name": "地球",
+    "en": "Earth",
+    "type": "行星",
+    "world": "earth",
+    "a_au": 1.0,
+    "L0": 100.46,
+    "n": 0.98561,
+    "radius_km": 6371,
+    "color": "#6EE7B7",
+    "texture": "assets/img/earth.jpg",
+    "pole": [
+     0,
+     90
+    ],
+    "atmo": "#7CC4FF",
+    "subsolar_lon": -15
+   },
+   {
+    "id": "moon",
+    "name": "月球",
+    "en": "Moon",
+    "type": "卫星",
+    "world": "moon",
+    "parent": "earth",
+    "a_km": 384400,
+    "period_days": 27.3217,
+    "L0": 123.3,
+    "radius_km": 1737,
+    "color": "#C9C9C9",
+    "texture": "assets/img/moon.jpg",
+    "view_lat": 12,
+    "view_lon": 22
+   },
+   {
+    "id": "l2",
+    "name": "存续空间站",
+    "en": "Survival Station",
+    "type": "空间站",
+    "world": "survival-station",
+    "parent": "earth",
+    "l2": true,
+    "color": "#F5D38A"
+   },
+   {
+    "id": "mars",
+    "name": "火星",
+    "en": "Mars",
+    "type": "行星",
+    "world": "mars",
+    "a_au": 1.524,
+    "L0": 355.45,
+    "n": 0.52403,
+    "radius_km": 3390,
+    "color": "#E0835A",
+    "texture": "assets/img/mars.jpg",
+    "pole": [
+     317.68,
+     52.89
+    ],
+    "atmo": "#E9A27A",
+    "subsolar_lon": -60
+   },
+   {
+    "id": "phobos",
+    "name": "火卫一",
+    "en": "Phobos",
+    "type": "卫星",
+    "parent": "mars",
+    "a_km": 9376,
+    "period_days": 0.3189,
+    "L0": 10,
+    "radius_km": 11,
+    "color": "#A9978A",
+    "summary": "105号补给船运载的就是火卫一样品；陆组用来“吓退”中子扫描的休眠真菌神经网络，据说也来自这里。"
+   },
+   {
+    "id": "belt",
+    "name": "小行星带",
+    "en": "Asteroid Belt",
+    "type": "小行星带",
+    "belt": true,
+    "inner_au": 2.2,
+    "outer_au": 3.3,
+    "color": "#B9A27E",
+    "summary": "耻辱战争之后，地球的大部分重工业迁到了小行星带。冶炼、造船与采矿在这里昼夜不停，地球因此得以去工业化、慢慢恢复。"
+   },
+   {
+    "id": "jupiter",
+    "name": "木星",
+    "en": "Jupiter",
+    "type": "行星",
+    "a_au": 5.203,
+    "L0": 34.4,
+    "n": 0.08309,
+    "radius_km": 69911,
+    "color": "#D9B98A",
+    "texture": "assets/img/jupiter.jpg",
+    "pole": [
+     268.06,
+     64.5
+    ],
+    "summary": "太阳系最大的行星。它的卫星群里有外太阳系最大的工业区，木卫二就是其中之一。"
+   },
+   {
+    "id": "europa",
+    "name": "木卫二",
+    "en": "Europa",
+    "type": "卫星",
+    "world": "europa",
+    "parent": "jupiter",
+    "a_km": 671100,
+    "period_days": 3.5512,
+    "L0": 200,
+    "radius_km": 1561,
+    "color": "#7DB4FF"
+   },
+   {
+    "id": "saturn",
+    "name": "土星",
+    "en": "Saturn",
+    "type": "行星",
+    "a_au": 9.537,
+    "L0": 49.94,
+    "n": 0.03346,
+    "radius_km": 58232,
+    "color": "#E6D29A",
+    "pole": [
+     40.59,
+     83.54
+    ],
+    "summary": "带着光环的气态巨行星。环上的冰块是外太阳系水和氧的重要来源。"
+   },
+   {
+    "id": "uranus",
+    "name": "天王星",
+    "en": "Uranus",
+    "type": "行星",
+    "a_au": 19.19,
+    "L0": 313.23,
+    "n": 0.01173,
+    "radius_km": 25362,
+    "color": "#9FD8E0",
+    "pole": [
+     257.31,
+     -15.18
+    ],
+    "summary": "躺着自转的冰巨星，离人类的日常生活已经很远了。"
+   },
+   {
+    "id": "neptune",
+    "name": "海王星",
+    "en": "Neptune",
+    "type": "行星",
+    "a_au": 30.07,
+    "L0": 304.88,
+    "n": 0.00598,
+    "radius_km": 24622,
+    "color": "#6F8DF0",
+    "pole": [
+     299.36,
+     43.46
+    ],
+    "summary": "太阳系最外侧的行星。再往外，就要靠宇宙弦了。"
+   }
+  ],
+  "sites": [
+   {
+    "id": "new-london",
+    "body": "earth",
+    "name": "新伦敦",
+    "en": "New London",
+    "type": "超级都市",
+    "lat": 51.5,
+    "lon": -0.12,
+    "major": true,
+    "summary": "耻辱战争后重建的伦敦。北大西洋环流停摆，不列颠冬季严寒，整座城市靠地下供热管网取暖；泰晤士河口被海水吞没，旧金融城沉入水下，新金融城以浮岛形式重建。《千金绑架案》的主舞台：Golden Days 游乐园、第三银行、联邦大学、银币剧院、哈灵顿庄园。",
+    "novel": true
+   },
+   {
+    "id": "southampton",
+    "body": "earth",
+    "name": "南安普敦区 · 信号塔",
+    "en": "Southampton",
+    "type": "地点",
+    "lat": 50.9,
+    "lon": -1.4,
+    "summary": "新伦敦都会区南端的旧港区。这里曾规划为南安普敦工业园区，园区倒闭后，老厂房多改作展览用途。旧工业展览区的第十一号厂房，与那座停工在六十四层、没有完工的信号塔，是千金绑架案的现场。",
+    "novel": true
+   },
+   {
+    "id": "neo-york",
+    "body": "earth",
+    "name": "霓约克",
+    "en": "Neo York",
+    "type": "超级都市",
+    "lat": 40.71,
+    "lon": -74.0,
+    "major": true,
+    "summary": "重建的纽约，又称新纽约。海平面上升八米后，曼哈顿下城、布鲁克林沿岸与新泽西草甸沦为浅海，城市在高地与人工岛之间重新长了出来。哥伦比亚大学所在地；霓约克水族馆里养着地球上最后一只大王乌贼。",
+    "aliases": [
+     "新纽约"
+    ],
+    "novel": true
+   },
+   {
+    "id": "toan",
+    "body": "earth",
+    "name": "东安（新东京）",
+    "en": "Tōan",
+    "type": "超级都市",
+    "lat": 35.69,
+    "lon": 139.69,
+    "major": true,
+    "summary": "とうあん。关东低地东部被海水淹没后，东京向西侧的台地与丘陵重建，改名东安。"
+   },
+   {
+    "id": "shanghai-3",
+    "body": "earth",
+    "name": "上海第三重建区",
+    "en": "Shanghai Reconstruction Zone III",
+    "type": "超级都市",
+    "lat": 31.23,
+    "lon": 121.47,
+    "major": true,
+    "summary": "长江三角洲的大片陆地沦为浅海，上海经历了三次重建。第三重建区建在人工高地和环形海堤之上，是东亚最大的海上都市。"
+   },
+   {
+    "id": "kwaherini",
+    "body": "earth",
+    "name": "夸赫里尼（启程城）",
+    "en": "Kwaherini · Space City",
+    "type": "超级都市",
+    "lat": 0.02,
+    "lon": 37.07,
+    "major": true,
+    "summary": "耻辱战争后少数完全新建的城市，地球上最年轻的超级都市。斯瓦希里语“诸位，再见”。建在赤道上的肯尼亚高原，向东发射，航迹下方是印度洋。东亚叫它“启程城”“太空城”，欧美叫它 Space City。发射频次下降后，生态保护派要求停止发射，联邦政府坚持保留地球的大规模发射能力。"
+   },
+   {
+    "id": "mt-kenya",
+    "body": "earth",
+    "name": "肯尼亚山（基里尼亚加）",
+    "en": "Mount Kenya · Kirinyaga",
+    "type": "地点",
+    "lat": -0.15,
+    "lon": 37.31,
+    "summary": "第一波殖民浪潮的移民离开地球时，舷窗里最后能认出的地标。它成了近地殖民地纪念品上“地球”的符号——尽管贴纸上画的雪顶，冰川早已消失。西坡铺着基里尼亚加电磁弹射轨道。"
+   },
+   {
+    "id": "med-zone",
+    "body": "earth",
+    "name": "地中海核毁伤区",
+    "en": "Mediterranean Exclusion Zone",
+    "type": "禁区",
+    "lat": 41.9,
+    "lon": 12.5,
+    "summary": "耻辱战争中地中海地区遭到核弹的严重破坏。罗马与梵蒂冈被废弃，宗座被迫迁往殖民地，最终在各各他建立新梵蒂冈。四百五十年后，这里的生态修复仍未完成。"
+   },
+   {
+    "id": "amoc",
+    "body": "earth",
+    "name": "北大西洋环流（已停滞）",
+    "en": "AMOC (collapsed)",
+    "type": "气候",
+    "lat": 47,
+    "lon": -33,
+    "summary": "耻辱战争把温室效应推到了接近极限，北大西洋经向翻转环流彻底停摆。欧洲西北部失去了来自墨西哥湾的暖流，冬天变得漫长而寒冷。"
+   },
+   {
+    "id": "greenland",
+    "body": "earth",
+    "name": "格陵兰（冰盖消融）",
+    "en": "Greenland",
+    "type": "气候",
+    "lat": 71,
+    "lon": -42,
+    "summary": "格陵兰冰盖大部分消融，只在东部高地残留冰帽。这是海平面上升约八米的主要来源。如今岛上的裸露岩地正在长出苔原。"
+   },
+   {
+    "id": "flood-nl",
+    "body": "earth",
+    "name": "荷兰低地（已成浅海）",
+    "en": "Dutch Lowlands",
+    "type": "淹没区",
+    "lat": 52.6,
+    "lon": 5.2,
+    "summary": "海平面上升八米后，荷兰、比利时北部与德国北海沿岸的低地大部分沦为浅海。"
+   },
+   {
+    "id": "flood-ganges",
+    "body": "earth",
+    "name": "恒河三角洲（已成浅海）",
+    "en": "Ganges Delta",
+    "type": "淹没区",
+    "lat": 22.8,
+    "lon": 90.0,
+    "summary": "孟加拉与西孟加拉的三角洲平原大部分被海水吞没。"
+   },
+   {
+    "id": "flood-yangtze",
+    "body": "earth",
+    "name": "长江三角洲（部分淹没）",
+    "en": "Yangtze Delta",
+    "type": "淹没区",
+    "lat": 32.4,
+    "lon": 120.6,
+    "summary": "苏北平原与长江口的低地沦为浅海。"
+   },
+   {
+    "id": "flood-mekong",
+    "body": "earth",
+    "name": "湄公河三角洲（已成浅海）",
+    "en": "Mekong Delta",
+    "type": "淹没区",
+    "lat": 9.9,
+    "lon": 105.8,
+    "summary": "湄公河三角洲几乎全部被淹没。"
+   },
+   {
+    "id": "flood-nile",
+    "body": "earth",
+    "name": "尼罗河三角洲（部分淹没）",
+    "en": "Nile Delta",
+    "type": "淹没区",
+    "lat": 31.1,
+    "lon": 31.0,
+    "summary": "尼罗河三角洲北半部沦为浅海，亚历山大港旧城沉入水下。"
+   },
+   {
+    "id": "flood-gulf",
+    "body": "earth",
+    "name": "密西西比河口（已成浅海）",
+    "en": "Mississippi Delta",
+    "type": "淹没区",
+    "lat": 29.6,
+    "lon": -90.8,
+    "summary": "路易斯安那沿岸与新奥尔良一带被海水吞没。"
+   },
+   {
+    "id": "flood-florida",
+    "body": "earth",
+    "name": "佛罗里达南部（已成浅海）",
+    "en": "South Florida",
+    "type": "淹没区",
+    "lat": 25.9,
+    "lon": -80.9,
+    "summary": "大沼泽地与迈阿密一带沦为浅海。"
+   },
+   {
+    "id": "flood-amazon",
+    "body": "earth",
+    "name": "亚马孙河口（部分淹没）",
+    "en": "Amazon Mouth",
+    "type": "淹没区",
+    "lat": 0.0,
+    "lon": -50.0,
+    "summary": "亚马孙河口的岛屿与低地被淹没。"
+   },
+   {
+    "id": "geo-yard",
+    "body": "earth",
+    "name": "同步轨道联合船坞",
+    "en": "GEO Joint Shipyard",
+    "type": "轨道设施",
+    "orbit_km": 42164,
+    "lon": -20,
+    "summary": "地球同步轨道上的联合船坞。105号补给船就是从这里出发，载着火卫一样品飞往存续空间站的。",
+    "novel": true
+   },
+   {
+    "id": "halo-l2",
+    "body": "earth",
+    "name": "地日L2晕轮轨道",
+    "en": "Sun–Earth L2 halo orbit",
+    "type": "轨道",
+    "anchor": "l2pt",
+    "off_km": [
+     0,
+     250000,
+     0
+    ],
+    "summary": "存续空间站沿这条晕轮轨道绕地日第二拉格朗日点运行，与地球的单程通讯延迟约五秒。",
+    "novel": true
+   },
+   {
+    "id": "intercept-105",
+    "body": "earth",
+    "name": "105 号拦截点",
+    "en": "Supply ship 105 intercept",
+    "type": "事件",
+    "anchor": "l2",
+    "off_km": [
+     -90000,
+     60000,
+     -40000
+    ],
+    "summary": "105 号补给船在距空间站几百公里的地方被兰姆号击毁，碎片雨打在空间站的外层防护上。皮特·罗森乘逃生舱弹射，被弗莱明中校救起。图上为了看得清楚，把它画得离空间站远了一些。",
+    "novel": true
+   },
+   {
+    "id": "lamb-pos",
+    "body": "earth",
+    "name": "兰姆号射击阵位",
+    "en": "LAMB firing position",
+    "type": "事件",
+    "anchor": "l2",
+    "off_km": [
+     -200000,
+     -560000,
+     0
+    ],
+    "summary": "兰姆武装船在距空间站约六十万公里的李萨如轨道上发射拦截弹。",
+    "novel": true
+   },
+   {
+    "id": "mare-tranq",
+    "body": "moon",
+    "name": "静海基地",
+    "en": "Tranquility Base",
+    "type": "基地",
+    "lat": 0.67,
+    "lon": 23.47,
+    "major": true,
+    "summary": "月球防卫军的主基地，建在人类第一次踏上月面的古老玄武岩平原上。天线、穹顶、发射架和地堡长满了平原。马丁内斯少将在这里封锁了存续实验室。",
+    "novel": true
+   },
+   {
+    "id": "sinus-amoris",
+    "body": "moon",
+    "name": "爱情湾旅游区",
+    "en": "Sinus Amoris Resort",
+    "type": "度假区",
+    "lat": 18.1,
+    "lon": 39.1,
+    "summary": "第三银行的产业。诗万说它“审美和名字一样糟糕”，乔治劝弗莱明中校去那里“放松一下”。",
+    "novel": true
+   },
+   {
+    "id": "thomson",
+    "body": "moon",
+    "name": "汤姆孙环形山指挥中心",
+    "en": "Thomson Crater Command",
+    "type": "基地",
+    "lat": -32.7,
+    "lon": 166.2,
+    "summary": "月球防御部队的指挥中心，位于月球背面。105号事件当晚，正是它下达了“允许发射”的命令。",
+    "novel": true
+   },
+   {
+    "id": "valles",
+    "body": "mars",
+    "name": "水手谷大学",
+    "en": "Valles Marineris University",
+    "type": "大学",
+    "lat": -13.9,
+    "lon": -59.2,
+    "summary": "建在水手号峡谷边缘的火星最古老的大学。"
+   },
+   {
+    "id": "olympus",
+    "body": "mars",
+    "name": "奥林匹克研究院",
+    "en": "Olympus Institute",
+    "type": "研究院",
+    "lat": 18.65,
+    "lon": -133.8,
+    "summary": "建在奥林匹斯山山麓的研究院，火星地球化工程的大脑。"
+   },
+   {
+    "id": "foundation",
+    "body": "mars",
+    "name": "奠基大学",
+    "en": "Foundation University",
+    "type": "大学",
+    "lat": 3.0,
+    "lon": 154.7,
+    "summary": "埃律西昂平原上的大学，以最早一批定居者的营地为基础建成。"
+   },
+   {
+    "id": "north-sea-mars",
+    "body": "mars",
+    "name": "北方浅海",
+    "en": "Boreal Sea",
+    "type": "海洋",
+    "lat": 62,
+    "lon": 20,
+    "summary": "五百多年的温室化让北半球低地蓄起了一片浅海。改造蓝藻在这里释放氧气，海岸边长出了火星苔原。"
+   }
+  ]
+ }
+}

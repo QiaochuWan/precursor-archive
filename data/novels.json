@@ -1,0 +1,305 @@
+{
+ "books": [
+  {
+   "id": "qianjin",
+   "title": "千金绑架案",
+   "en": "The Heiress Affair",
+   "volume": "前文明档案 · 卷一",
+   "status": "完结",
+   "synopsis": "一只赌气离家的医疗机器人猫，一位被安排好人生的银行千金，在新伦敦的摩天轮上交换了外套——也交换了命运。同一个夜里，105 号补给船在地日 L2 附近被击毁，一位中校违令救起了唯一的幸存者。被误绑的 ama-7 在黑暗里用铁唱歌；而她不善表达的“母亲”，正一个人走上六十四层高的塔顶，去当那个声东击西的诱饵。",
+   "tags": [
+    "前文明",
+    "科幻",
+    "母女",
+    "绑架",
+    "新伦敦",
+    "太空"
+   ],
+   "cover": {
+    "palette": [
+     "#0E1A2E",
+     "#E2B254",
+     "#C9D6EA"
+    ]
+   },
+   "credits": "第一至第十五章、第十七章开头与第十八章前半：作者原作；第十六章、第十七章至第二十二章与尾声：续写",
+   "chapters": [
+    {
+     "id": "00",
+     "title": "序 · 致博士",
+     "file": "content/novel/qianjin/00.md"
+    },
+    {
+     "id": "01",
+     "title": "第一章 · 替代品",
+     "file": "content/novel/qianjin/01.md"
+    },
+    {
+     "id": "02",
+     "title": "第二章 · 摩天轮上的世界",
+     "file": "content/novel/qianjin/02.md"
+    },
+    {
+     "id": "03",
+     "title": "第三章 · 游园惊梦",
+     "file": "content/novel/qianjin/03.md"
+    },
+    {
+     "id": "04",
+     "title": "第四章 · 哈灵顿庄园",
+     "file": "content/novel/qianjin/04.md"
+    },
+    {
+     "id": "05",
+     "title": "第五章 · 囚笼中",
+     "file": "content/novel/qianjin/05.md"
+    },
+    {
+     "id": "06",
+     "title": "第六章 · 深空机动",
+     "file": "content/novel/qianjin/06.md"
+    },
+    {
+     "id": "07",
+     "title": "第七章 · 私人联络",
+     "file": "content/novel/qianjin/07.md"
+    },
+    {
+     "id": "08",
+     "title": "第八章 · 圣彼得之钥",
+     "file": "content/novel/qianjin/08.md"
+    },
+    {
+     "id": "09",
+     "title": "第九章 · 捕风捉影",
+     "file": "content/novel/qianjin/09.md"
+    },
+    {
+     "id": "10",
+     "title": "第十章 · 月影",
+     "file": "content/novel/qianjin/10.md"
+    },
+    {
+     "id": "11",
+     "title": "第十一章 · 幸存者",
+     "file": "content/novel/qianjin/11.md"
+    },
+    {
+     "id": "12",
+     "title": "第十二章 · 逃离静海",
+     "file": "content/novel/qianjin/12.md"
+    },
+    {
+     "id": "13",
+     "title": "第十三章 · 掷下银币",
+     "file": "content/novel/qianjin/13.md"
+    },
+    {
+     "id": "14",
+     "title": "第十四章 · 箱子里的猫",
+     "file": "content/novel/qianjin/14.md"
+    },
+    {
+     "id": "15",
+     "title": "第十五章 · 金蝉脱壳",
+     "file": "content/novel/qianjin/15.md"
+    },
+    {
+     "id": "16",
+     "title": "第十六章 · 回声",
+     "file": "content/novel/qianjin/16.md"
+    },
+    {
+     "id": "17",
+     "title": "第十七章 · 最后的晚餐",
+     "file": "content/novel/qianjin/17.md"
+    },
+    {
+     "id": "18",
+     "title": "第十八章 · 歌剧魅影",
+     "file": "content/novel/qianjin/18.md"
+    },
+    {
+     "id": "19",
+     "title": "第十九章 · 天亮之前",
+     "file": "content/novel/qianjin/19.md"
+    },
+    {
+     "id": "20",
+     "title": "第二十章 · 诱饵",
+     "file": "content/novel/qianjin/20.md"
+    },
+    {
+     "id": "21",
+     "title": "第二十一章 · AMA-8",
+     "file": "content/novel/qianjin/21.md"
+    },
+    {
+     "id": "22",
+     "title": "第二十二章 · 晚安",
+     "file": "content/novel/qianjin/22.md"
+    },
+    {
+     "id": "23",
+     "title": "尾声 · 致博士",
+     "file": "content/novel/qianjin/23.md"
+    }
+   ],
+   "archive": "kidnapping-case"
+  },
+  {
+   "id": "last-squid",
+   "title": "窒息的水",
+   "en": "Suffocating Water",
+   "volume": "前文明档案 · 前传",
+   "status": "完结",
+   "synopsis": "千金绑架案之前。一罐会录音的蘑菇泄露了陆藏了很多年的心事，正和预言家冷战的 ama-7 当场决定：用陆的名义请假，开飞船带她去地球。霓约克水族馆里，地球上最后一只大王乌贼焦躁地拍打着玻璃；一场早已预告过的游行，正在变成一次袭击。陆的学弟站在孢子烟里毫发无伤，缸底的倒计时一秒一秒往下走，两条街外的档案馆空无一人。一路跟在她们身后的，是两个为法院工作的特工",
+   "tags": [
+    "前文明",
+    "前传",
+    "霓约克",
+    "水族馆",
+    "特工"
+   ],
+   "cover": {
+    "art": "aquarium",
+    "palette": [
+     "#072533",
+     "#B0313D",
+     "#9FE3EE"
+    ]
+   },
+   "credits": "作者著；Claude 参与续写与校对",
+   "archive": "neo-york-aquarium",
+   "archiveLabel": "霓约克水族馆事件",
+   "cast": [
+    "lu",
+    "ama",
+    "martin",
+    "douglas",
+    "caleb",
+    "astrea",
+    "wanghua",
+    "hannah",
+    "will"
+   ],
+   "places": [
+    "earth",
+    "survival-station",
+    "moon",
+    "europa",
+    "w02",
+    "scorpius-central"
+   ],
+   "chapters": [
+    {
+     "id": "01",
+     "title": "第一章 · 录音菇",
+     "file": "content/novel/last-squid/01.md"
+    },
+    {
+     "id": "02",
+     "title": "第二章 · 最后的大王乌贼",
+     "file": "content/novel/last-squid/02.md"
+    },
+    {
+     "id": "03",
+     "title": "第三章 · 自由之海",
+     "file": "content/novel/last-squid/03.md"
+    },
+    {
+     "id": "04",
+     "title": "第四章 · 孢子",
+     "file": "content/novel/last-squid/04.md"
+    },
+    {
+     "id": "05",
+     "title": "第五章 · 穷途末路",
+     "file": "content/novel/last-squid/05.md"
+    },
+    {
+     "id": "06",
+     "title": "第六章 · 海的深处",
+     "file": "content/novel/last-squid/06.md"
+    },
+    {
+     "id": "07",
+     "title": "第七章 · 小狮子",
+     "file": "content/novel/last-squid/07.md"
+    },
+    {
+     "id": "08",
+     "title": "第八章 · 蓝色的血",
+     "file": "content/novel/last-squid/08.md"
+    },
+    {
+     "id": "09",
+     "title": "幕间 · 第三银行",
+     "file": "content/novel/last-squid/09.md"
+    },
+    {
+     "id": "10",
+     "title": "第九章 · 回声",
+     "file": "content/novel/last-squid/10.md"
+    },
+    {
+     "id": "11",
+     "title": "尾声 · 橘子",
+     "file": "content/novel/last-squid/11.md"
+    }
+   ]
+  },
+  {
+   "id": "keys-of-peter",
+   "title": "圣彼得之钥",
+   "en": "The Keys of Saint Peter",
+   "volume": "前文明档案 · 后传",
+   "status": "连载中",
+   "synopsis": "千金绑架案之后。一封盖着渔人权戒的传召令，在凌晨三点四十分叫醒了存续空间站：联邦存续实验室擅自动用“圣彼得之钥”的那一夜，终究被写进了教廷的日志。五旬节之前，艾迪、预言家和 ama-8 必须动身前往新各各他，当面向教宗陈明经过——而名单的最后一行，是一个艾迪最不想在听证会上看见的名字。",
+   "tags": [
+    "前文明",
+    "后传",
+    "新各各他",
+    "五旬节",
+    "天堂支点"
+   ],
+   "cover": {
+    "art": "keys",
+    "palette": [
+     "#3A111A",
+     "#E2B254",
+     "#F3EEDF"
+    ]
+   },
+   "credits": "作者著；Claude 参与续写与校对",
+   "cast": [
+    "eddie",
+    "astrea",
+    "ama",
+    "fulcrum"
+   ],
+   "places": [
+    "survival-station",
+    "golgotha"
+   ],
+   "chapters": [
+    {
+     "id": "00",
+     "title": "序 · 钥匙",
+     "file": "content/novel/keys-of-peter/00.md"
+    },
+    {
+     "id": "01",
+     "title": "第一章 · 传召令",
+     "file": "content/novel/keys-of-peter/01.md"
+    }
+   ]
+  }
+ ],
+ "slots": [
+  {
+   "title": "卷二 · 待写",
+   "hint": "在 data/novels.json 的 books 数组中追加一本书，并把章节 Markdown 放进 content/novel/<书名id>/。"
+  }
+ ]
+}

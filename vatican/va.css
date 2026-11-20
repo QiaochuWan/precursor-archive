@@ -1,0 +1,131 @@
+/* Sancta Sedes · 新梵蒂冈 —— 档案馆附录页面样式 */
+:root{
+  --paper:#F7F3E8; --page:#EFE8D6; --ink:#2B2522; --mute:#6F655A; --rule:#D9CDAF;
+  --red:#8A1C1C; --red2:#6E1212; --gold:#B8952F; --nav:#5B4A32; --nav2:#4A3C28;
+  --serif:"Times New Roman",Times,"Noto Serif SC","Songti SC","STSong",serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--page);color:var(--ink);font-family:var(--serif);font-size:16px;line-height:1.6}
+a{color:var(--red);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+/* 档案馆提示条 */
+.fic{background:#2A2420;color:#CFC3A8;font:12px/1.4 "Noto Sans SC",system-ui,sans-serif;padding:6px 0}
+.fic .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.fic a{color:#E9D9A6}
+
+/* 页眉 */
+.head{background:linear-gradient(#FBF8EF,#F1EAD6);border-bottom:1px solid var(--rule)}
+.head .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:12px;gap:16px}
+.brand{display:flex;align-items:center;gap:14px;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.brand img{width:54px;height:63px}
+.brand b{display:block;font-weight:normal;font-size:30px;letter-spacing:.14em;font-variant:small-caps;color:#3A2F27;line-height:1.1}
+.brand i{display:block;font-style:normal;font-size:13px;letter-spacing:.3em;color:var(--mute);margin-top:4px}
+.hlang{font-size:13px;color:var(--mute);text-align:right}
+.hlang a,.hlang span{margin-left:6px;letter-spacing:.06em}
+.hlang .on{color:var(--ink);font-weight:bold}
+
+/* 导航 */
+.nav{background:linear-gradient(var(--nav),var(--nav2));border-top:1px solid #7A6646;border-bottom:3px solid var(--gold)}
+.nav .wrap{display:flex;flex-wrap:wrap}
+.nav span{color:#F1E3B8;font-size:12px;letter-spacing:.07em;padding:8px 11px;border-right:1px solid rgba(255,255,255,.12);white-space:nowrap}
+.nav span:first-child{border-left:1px solid rgba(255,255,255,.12)}
+.nav span small{display:block;font-size:11px;letter-spacing:.08em;color:#CDBB8A}
+
+/* 主体两栏 */
+.cols{display:grid;grid-template-columns:215px 1fr;gap:22px;padding-top:20px;padding-bottom:30px}
+.side .crest{background:var(--paper);border:1px solid var(--rule);text-align:center;padding:16px 10px 12px}
+.side .crest img{width:62px;height:72px}
+.side .crest b{display:block;font-weight:normal;font-variant:small-caps;letter-spacing:.08em;font-size:17px;margin-top:6px}
+.side .crest i{display:block;font-style:normal;font-size:12.5px;color:var(--mute)}
+.side ul{list-style:none;margin:12px 0 0;padding:0;background:var(--paper);border:1px solid var(--rule)}
+.side li{border-bottom:1px solid #E6DCC4;font-size:13.5px}
+.side li:last-child{border-bottom:0}
+.side li a,.side li span{display:block;padding:7px 12px;color:#4A3F35}
+.side li.on a{color:var(--red);font-weight:bold;background:#F2E9D2}
+.side li span{color:#9A8F80}
+.side .popes{margin-top:12px}
+.side .popes li a{font-size:13px}
+
+/* 文献 */
+.doc{background:var(--paper);border:1px solid var(--rule);padding:22px 46px 34px;min-width:0}
+.crumb{font-size:12.5px;color:var(--mute);margin-bottom:6px}
+.langbar{text-align:center;font-size:14px;letter-spacing:.08em;margin:6px 0 22px;color:var(--mute)}
+.langbar b{color:var(--ink)}
+.dhead{text-align:center;margin:10px 0 26px}
+.dhead p{margin:2px 0;line-height:1.5}
+.dhead .k{font-size:15px;letter-spacing:.18em}
+.dhead .t{font-size:30px;letter-spacing:.12em;color:var(--red2);margin:8px 0}
+.dhead .p{font-size:17px;letter-spacing:.14em}
+.dhead .a{font-size:13.5px;letter-spacing:.1em;color:#4A3F35}
+.dhead .s{font-size:14.5px;letter-spacing:.06em;margin-top:12px;font-style:italic;color:#4A3F35}
+.zh .dhead .k{letter-spacing:.3em}
+.zh .dhead .t{font-size:28px;letter-spacing:.2em}
+.zh .dhead .s{font-style:normal}
+.dhead .orn{color:var(--gold);letter-spacing:.6em;margin-top:14px}
+.body{text-align:justify;font-size:16.5px}
+.zh .body{font-size:16.5px;line-height:1.95;text-align:justify}
+.body p{margin:0 0 .9em}
+.body h3{text-align:center;font-weight:normal;font-size:15px;letter-spacing:.2em;color:var(--red2);margin:2em 0 1em}
+.body ul{margin:0 0 1em 1.4em;padding:0}
+.body li{margin:.25em 0 .5em}
+.body .ptitle{text-align:center;font-style:italic;color:var(--red2);margin-top:1.6em}
+.zh .body .ptitle{font-style:normal;letter-spacing:.15em}
+.body .prayer{text-align:center;font-style:italic;line-height:1.75;margin:.4em 0 1.4em}
+.zh .body .prayer{font-style:normal}
+sup.fn{font-size:.7em;line-height:0;vertical-align:super;margin-left:1px}
+sup.fn a{color:var(--red)}
+.datum{margin-top:2em;font-style:italic;text-align:left}
+.zh .datum{font-style:normal}
+.sig{text-align:right;margin:1.2em 0 0;letter-spacing:.12em;font-variant:small-caps;font-size:18px}
+.notes{margin-top:2.2em;padding-top:1em;border-top:1px solid var(--rule);font-size:13.5px;line-height:1.6}
+.notes p{margin:.25em 0}
+.notes a.back{margin-right:4px}
+.docnav{display:flex;justify-content:space-between;gap:10px;margin-top:2em;font-size:13.5px}
+
+/* 通谕索引 */
+.idx h1{text-align:center;font-weight:normal;letter-spacing:.2em;font-size:24px;color:var(--red2);margin:6px 0 4px}
+.idx .sub{text-align:center;color:var(--mute);font-size:13.5px;margin-bottom:24px;letter-spacing:.1em}
+.idx .pope{display:grid;grid-template-columns:70px 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--rule)}
+.idx .pope img{width:56px;height:65px;opacity:.9}
+.idx .pope h2{margin:0;font-weight:normal;font-variant:small-caps;letter-spacing:.1em;font-size:19px}
+.idx .pope h2 small{font-variant:normal;letter-spacing:0;color:var(--mute);font-size:13px;margin-left:8px}
+.idx .item{margin:.6em 0 0}
+.idx .item .la{font-style:italic}
+.idx .item .zh{display:block;font-size:14px;color:#4A3F35}
+.idx .item .ln{font-size:13px;letter-spacing:.06em;color:var(--mute);white-space:nowrap}
+
+/* 页脚 */
+.foot{background:#E4DCC6;border-top:1px solid var(--rule);color:var(--mute);font-size:12px;text-align:center;padding:14px 0 18px;line-height:1.7}
+.foot b{font-weight:normal;letter-spacing:.12em;color:#4A3F35}
+
+@media (max-width:780px){
+  .cols{grid-template-columns:1fr}
+  .side{order:2}
+  .doc{padding:18px 18px 26px}
+  .brand b{font-size:22px}
+  .brand img{width:42px;height:49px}
+  .hlang{display:none}
+  .dhead .t{font-size:24px}
+}
+.body.mp h3{letter-spacing:.08em;font-size:15.5px;margin:1.6em 0 .6em}
+/* 生平页 / Biography */
+.bio .biohead{display:flex;gap:18px;align-items:center;background:var(--paper);border:1px solid var(--rule);padding:14px 18px;margin:0 0 22px}
+.bio .biohead img{width:64px;height:74px}
+.bio .biohead .nm{margin:0 0 6px;font-variant:small-caps;letter-spacing:.1em;font-size:20px;color:var(--red2)}
+table.info{border-collapse:collapse;font-size:13.5px}
+table.info th{font-weight:normal;color:var(--mute);text-align:left;padding:2px 14px 2px 0;white-space:nowrap;vertical-align:top}
+table.info td{padding:2px 0;color:var(--ink)}
+.bio .biot{text-align:center;font-weight:normal;letter-spacing:.12em;font-size:20px;color:var(--red2);margin:4px 0 22px}
+.zh .bio .biot{letter-spacing:.3em}
+.bio .body p{text-indent:0}
+.idx .pope table.info{margin:6px 0 2px}
+.idx .biol{font-size:13.5px;color:var(--mute)}
+.en .body{font-size:16px;line-height:1.75}
+.side .crest.st img{width:150px;height:auto}
+.bio .biohead img.stm{width:120px;height:auto}
+.idx .pope img.stm{width:66px;height:auto;opacity:1}
+.bio .body h3{text-align:center}

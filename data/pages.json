@@ -1,0 +1,346 @@
+{
+ "categories": [
+  {
+   "id": "lore",
+   "name": "设定词条",
+   "desc": "世界观、制度、地理与事件的正式词条"
+  },
+  {
+   "id": "appendix",
+   "name": "附录",
+   "desc": "联邦大学的讲义与教材：弗里斯顿教授的航弦物理、王桦教授的欧罗巴生物学；新梵蒂冈宗座网站的通谕存档"
+  },
+  {
+   "id": "source",
+   "name": "原始资料",
+   "desc": "作者写下的原始设定"
+  }
+ ],
+ "pages": [
+  {
+   "id": "overview",
+   "title": "世界观总览",
+   "category": "lore",
+   "file": "content/lore/overview.md",
+   "summary": "从这里开始：时代、基调与阅读路线"
+  },
+  {
+   "id": "politics",
+   "title": "联邦政治架构",
+   "category": "lore",
+   "file": "content/lore/politics.md",
+   "summary": "议会、秘书长、内阁、法院与异星代理议员"
+  },
+  {
+   "id": "territory",
+   "title": "疆域、象限与行政区划",
+   "category": "lore",
+   "file": "content/lore/territory.md",
+   "summary": "双层包络、坐标系、四象限与星区"
+  },
+  {
+   "id": "warp-routes",
+   "title": "曲率航路与宇宙弦",
+   "category": "lore",
+   "file": "content/lore/warp-routes.md",
+   "summary": "天蝎主干、周期航路、失落世界与通讯延迟"
+  },
+  {
+   "id": "hangxian",
+   "title": "航弦",
+   "category": "lore",
+   "file": "content/lore/hangxian.md",
+   "summary": "能让光和船快几百倍的宇宙弦：主干、弦环、窗口与代价"
+  },
+  {
+   "id": "route-history",
+   "title": "航弦探索史",
+   "category": "lore",
+   "file": "content/lore/route-history.md",
+   "summary": "从战前的“先到的星光”到周期边疆：人类怎样沿着航弦走出去"
+  },
+  {
+   "id": "history",
+   "title": "历史年表",
+   "category": "lore",
+   "file": "content/lore/history.md",
+   "summary": "从耻辱战争到千金绑架案"
+  },
+  {
+   "id": "inner-solar",
+   "title": "内太阳系",
+   "category": "lore",
+   "file": "content/lore/inner-solar.md",
+   "summary": "地球、月球、L2 与火星：五个小时能到的地方"
+  },
+  {
+   "id": "earth-flood",
+   "title": "地球：海平面上升八米之后",
+   "category": "lore",
+   "file": "content/lore/earth-flood.md",
+   "summary": "新的海岸线、停摆的环流与超级都市"
+  },
+  {
+   "id": "kwaherini",
+   "title": "夸赫里尼（启程城）",
+   "category": "lore",
+   "file": "content/lore/kwaherini.md",
+   "summary": "赤道上最年轻的超级都市，人类走向星海的出发大厅"
+  },
+  {
+   "id": "mars",
+   "title": "火星自治领",
+   "category": "lore",
+   "file": "content/lore/mars.md",
+   "summary": "五百五十年地球化与“绿火星”之梦"
+  },
+  {
+   "id": "mars-sheep",
+   "title": "火星羊",
+   "category": "lore",
+   "file": "content/lore/mars-sheep.md",
+   "summary": "苏格兰黑面羊的后代、α 与 β 蛋白，以及改变两个人一生的一顿烤羊"
+  },
+  {
+   "id": "religion",
+   "title": "宗教：宗座、各各他与基洛伯",
+   "category": "lore",
+   "file": "content/lore/religion.md",
+   "summary": "新梵蒂冈、圣彼得之钥与太空摩门教"
+  },
+  {
+   "id": "conti-family",
+   "title": "孔蒂家族",
+   "category": "lore",
+   "file": "content/lore/conti-family.md",
+   "summary": "出过四位教宗的古老家族、各各他五分之一的土地、潮眠黑与不在族谱上的艾迪",
+   "aliases": [
+    "孔蒂",
+    "House of Conti"
+   ]
+  },
+  {
+   "id": "survival-lab",
+   "title": "存续实验室",
+   "category": "lore",
+   "file": "content/lore/survival-lab.md",
+   "summary": "六个研究组、天堂支点与伐木工"
+  },
+  {
+   "id": "ama-project",
+   "title": "AMA 计划",
+   "category": "lore",
+   "file": "content/lore/ama-project.md",
+   "summary": "从趴在地上充电的机器猫到 ama-10：十次迭代与一份残缺的日志"
+  },
+  {
+   "id": "expansion-program",
+   "title": "星际开拓计划与天鹅一号事故",
+   "category": "lore",
+   "file": "content/lore/expansion-program.md",
+   "summary": "第三反应堆、被托管的赔偿、105号补给船与乔治·卡文"
+  },
+  {
+   "id": "ai-rights",
+   "title": "智能体权利与人格登记",
+   "category": "lore",
+   "file": "content/lore/ai-rights.md",
+   "summary": "未登记即设备？意识融合与同意"
+  },
+  {
+   "id": "magellan",
+   "title": "麦哲伦远征与求知者",
+   "category": "lore",
+   "file": "content/lore/magellan.md",
+   "summary": "雅各布之梯、玛门、赫菲斯托斯与两万光年走廊"
+  },
+  {
+   "id": "swan-sector",
+   "title": "天鹅星区",
+   "category": "lore",
+   "file": "content/lore/swan-sector.md",
+   "summary": "天鹅一号、眼睛行星天鹅三号、伞怪与孤儿岛"
+  },
+  {
+   "id": "lighthouse-orphanage",
+   "title": "乔恩娜岛孤儿院",
+   "category": "lore",
+   "file": "content/lore/lighthouse-orphanage.md",
+   "summary": "孤儿岛上的阿明博士、火星羊阿里、班长 Molly、副班长 Will、小星星与孩子王 Big J",
+   "aliases": [
+    "孤儿岛",
+    "孤儿岛孤儿院",
+    "灯塔岛孤儿院",
+    "乔恩娜岛"
+   ]
+  },
+  {
+   "id": "star-goddess",
+   "title": "星辰女神号事故",
+   "category": "lore",
+   "file": "content/lore/star-goddess.md",
+   "summary": "一个从航弦上弹射的逃生舱，和大王乌贼号上的阿明博士"
+  },
+  {
+   "id": "the-a",
+   "title": "the A",
+   "category": "lore",
+   "file": "content/lore/the-a.md",
+   "summary": "外围殖民地的极端反政府组织"
+  },
+  {
+   "id": "kidnapping-case",
+   "title": "千金绑架案事件档案",
+   "category": "lore",
+   "file": "content/lore/kidnapping-case.md",
+   "summary": "三天、两条线、一个绳结：时间线与证据链"
+  },
+  {
+   "id": "harrington-family",
+   "title": "哈灵顿家族",
+   "category": "lore",
+   "file": "content/lore/harrington-family.md",
+   "summary": "维多利亚装束的老先生、冲浪的爱德华、格蕾丝与小行星带里的画",
+   "aliases": [
+    "哈灵顿庄园"
+   ]
+  },
+  {
+   "id": "neo-york-aquarium",
+   "title": "霓约克水族馆",
+   "category": "lore",
+   "file": "content/lore/neo-york-aquarium.md",
+   "summary": "地球上最后一只大王乌贼小皮，以及千金之前的那场游行与袭击",
+   "aliases": [
+    "霓约克水族馆事件",
+    "水族馆事件",
+    "小皮"
+   ]
+  },
+  {
+   "id": "giant-squid",
+   "title": "大王乌贼与天鹅大乌贼",
+   "category": "lore",
+   "file": "content/lore/giant-squid.md",
+   "summary": "地球深海最后的巨型头足类，和它在外星海洋里野化的改良同类",
+   "aliases": [
+    "大王乌贼",
+    "天鹅大乌贼"
+   ]
+  },
+  {
+   "id": "recording-mushroom",
+   "title": "物种录音菇",
+   "category": "lore",
+   "file": "content/lore/recording-mushroom.md",
+   "summary": "天蝎中心的真菌：录下周围的声音，受惊时放出来",
+   "aliases": [
+    "录音菇"
+   ]
+  },
+  {
+   "id": "survival-act",
+   "title": "存续法案与监督项目",
+   "category": "lore",
+   "file": "content/lore/survival-act.md",
+   "summary": "议会管钱、政府管人、法院派特工：存续实验室的三方监督",
+   "aliases": [
+    "存续法案",
+    "《存续法案》",
+    "存续空间站监督项目",
+    "监督项目"
+   ]
+  },
+  {
+   "id": "free-sea",
+   "title": "自由之海",
+   "category": "lore",
+   "file": "content/lore/free-sea.md",
+   "summary": "反对存续实验室的极端动物保护组织，经费却来自基因公司",
+   "aliases": [
+    "Free Sea",
+    "新伊甸基因",
+    "New Eden Genetics"
+   ]
+  },
+  {
+   "id": "woodcutter",
+   "title": "伐木工",
+   "category": "lore",
+   "file": "content/lore/woodcutter.md",
+   "summary": "无法观测的异常湮灭实体，以及预言家是怎么找到它的",
+   "aliases": [
+    "异常湮灭实体",
+    "湮灭事件",
+    "高维实体"
+   ]
+  },
+  {
+   "id": "caerula-arbor",
+   "title": "深蓝之树项目",
+   "category": "lore",
+   "file": "content/lore/caerula-arbor.md",
+   "summary": "陆主导的生命方舟计划，早期代号海嗣计划",
+   "aliases": [
+    "海嗣计划",
+    "深蓝之树",
+    "海嗣"
+   ]
+  },
+  {
+   "id": "source-original",
+   "title": "用户原始设定",
+   "category": "source",
+   "file": "content/archive/source-original.md",
+   "summary": "作者写下的背景、人物、故事梗概与地图修订意见"
+  },
+  {
+   "id": "hangxian-physics",
+   "title": "航弦物理导论",
+   "category": "appendix",
+   "file": "content/appendix/hangxian-physics.md",
+   "summary": "弗里斯顿教授的联邦大学讲义：拓扑缺陷、锥形时空、航弦度规、能量条件、入航与潮汐、弦环与窗口、观测与未解问题"
+  },
+  {
+   "id": "europa-biology",
+   "title": "欧罗巴生物学概论 · 导论",
+   "category": "appendix",
+   "file": "content/appendix/europa-biology.md",
+   "summary": "王桦著，联邦大学研究生教材：独立起源的木卫二生命，从磺肽核酸到玻璃硫虫的灭绝",
+   "aliases": [
+    "欧罗巴生物学概论",
+    "木卫二冰下生态",
+    "冰下生态",
+    "欧罗巴生命",
+    "磺肽核酸",
+    "玻璃硫虫",
+    "雪铃",
+    "土豆事故",
+    "欧罗巴研究所",
+    "双梳游片",
+    "斜缝带虫",
+    "三囊环片"
+   ]
+  },
+  {
+   "id": "encyclicals",
+   "title": "新纪元以来重要通谕",
+   "category": "appendix",
+   "file": "content/appendix/encyclicals.md",
+   "summary": "新梵蒂冈宗座网站存档：《在大地灰烬中》《他们的名字》《在群星之间》《无论是高是深》与手谕《燃烧的灯》，拉丁文原本与中文译本",
+   "aliases": [
+    "在大地灰烬中",
+    "他们的名字",
+    "无论是高是深",
+    "In cinere terrae",
+    "Nomina eorum",
+    "Inter sidera",
+    "Neque altitudo",
+    "通谕",
+    "教宗通谕",
+    "燃烧的灯",
+    "Lucerna ardens"
+   ]
+  }
+ ]
+}

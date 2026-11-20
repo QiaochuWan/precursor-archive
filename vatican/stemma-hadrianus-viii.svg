@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 808 1080"><title>Stemma Hadriani PP. VIII</title>
+<g stroke="#231F20" stroke-width="2.5" stroke-linejoin="round">
+<path d="M314,290 L366,290 Q367,345 364,398 L298,398 Q308,345 314,290 Z" fill="#ED1C24"/>
+<path d="M494,290 L442,290 Q441,345 444,398 L510,398 Q500,345 494,290 Z" fill="#ED1C24"/>
+<g transform="translate(808,0) scale(-1,1)"><g transform="translate(659,657) rotate(-47.6)" fill="#BABCBB">
+<rect x="-8" y="-664" width="16" height="652"/>
+<path fill-rule="evenodd" d="M-8,-664 H-66 V-644 H-52 V-630 H-66 V-606 H-52 V-592 H-66 V-572 H-8 Z M-38,-644 H-30 V-622 H-18 V-614 H-30 V-592 H-38 V-614 H-50 V-622 H-38 Z"/>
+</g></g>
+<g transform="translate(659,657) rotate(-47.6)" fill="#E3A924">
+<rect x="-8" y="-664" width="16" height="652"/>
+<path fill-rule="evenodd" d="M-8,-664 H-66 V-644 H-52 V-630 H-66 V-606 H-52 V-592 H-66 V-572 H-8 Z M-38,-644 H-30 V-622 H-18 V-614 H-30 V-592 H-38 V-614 H-50 V-622 H-38 Z"/>
+</g>
+<g id="side">
+<path d="M194,505 C170,505 150,498 132,486 L86,562 C120,582 158,594 194,595 Z" fill="#ED1C24"/>
+<path d="M143,524 h14 v9 h9 v14 h-9 v9 h-14 v-9 h-9 v-14 h9 Z" fill="#E3A924"/>
+<g fill="none" stroke-linecap="round">
+<g stroke="#231F20" stroke-width="12"><path d="M120,476 Q100,436 88,404"/><path d="M112,489 Q90,452 76,416"/><path d="M104,501 Q80,466 63,427"/><path d="M96,514 Q70,481 51,439"/><path d="M88,527 Q60,496 38,451"/><path d="M80,539 Q50,511 26,462"/><path d="M72,552 Q40,526 14,474"/></g>
+<g stroke="#E3A924" stroke-width="7.5"><path d="M120,476 Q100,436 88,404"/><path d="M112,489 Q90,452 76,416"/><path d="M104,501 Q80,466 63,427"/><path d="M96,514 Q70,481 51,439"/><path d="M88,527 Q60,496 38,451"/><path d="M80,539 Q50,511 26,462"/><path d="M72,552 Q40,526 14,474"/></g>
+</g>
+<path d="M124,474 L136,482 L88,566 L74,558 Z" fill="#E3A924"/>
+</g>
+<g transform="translate(808,0) scale(-1,1)">
+<path d="M194,505 C170,505 150,498 132,486 L86,562 C120,582 158,594 194,595 Z" fill="#ED1C24"/>
+<path d="M143,524 h14 v9 h9 v14 h-9 v9 h-14 v-9 h-9 v-14 h9 Z" fill="#E3A924"/>
+<g fill="none" stroke-linecap="round">
+<g stroke="#231F20" stroke-width="12"><path d="M120,476 Q100,436 88,404"/><path d="M112,489 Q90,452 76,416"/><path d="M104,501 Q80,466 63,427"/><path d="M96,514 Q70,481 51,439"/><path d="M88,527 Q60,496 38,451"/><path d="M80,539 Q50,511 26,462"/><path d="M72,552 Q40,526 14,474"/></g>
+<g stroke="#E3A924" stroke-width="7.5"><path d="M120,476 Q100,436 88,404"/><path d="M112,489 Q90,452 76,416"/><path d="M104,501 Q80,466 63,427"/><path d="M96,514 Q70,481 51,439"/><path d="M88,527 Q60,496 38,451"/><path d="M80,539 Q50,511 26,462"/><path d="M72,552 Q40,526 14,474"/></g>
+</g>
+<path d="M124,474 L136,482 L88,566 L74,558 Z" fill="#E3A924"/>
+</g>
+<path transform="translate(96,712)" fill="#BABCBB" fill-rule="evenodd" d="M-56,-66 H56 C60,-72 68,-76 74,-70 C82,-62 78,-52 70,-50 V50 C78,52 82,62 74,70 C68,76 60,72 56,66 H-56 C-60,72 -68,76 -74,70 C-82,62 -78,52 -70,50 V-50 C-78,-52 -82,-62 -74,-70 C-68,-76 -60,-72 -56,-66 Z M-40,-34 H40 V34 H-40 Z"/>
+<path transform="translate(712,712)" fill="#E3A924" fill-rule="evenodd" d="M-56,-66 H56 C60,-72 68,-76 74,-70 C82,-62 78,-52 70,-50 V50 C78,52 82,62 74,70 C68,76 60,72 56,66 H-56 C-60,72 -68,76 -74,70 C-82,62 -78,52 -70,50 V-50 C-78,-52 -82,-62 -74,-70 C-68,-76 -60,-72 -56,-66 Z M-40,-34 H40 V34 H-40 Z"/>
+<ellipse transform="translate(149,657) rotate(47.6)" rx="22" ry="12" fill="#BABCBB"/>
+<ellipse transform="translate(659,657) rotate(-47.6)" rx="22" ry="12" fill="#E3A924"/>
+</g>
+<g fill="none" stroke-linecap="round">
+<path id="cordL" d="M196,742 C180,736 166,730 150,722 C118,710 96,722 93,752 C90,785 98,812 108,826"/>
+<path d="M196,742 C180,736 166,730 150,722 C118,710 96,722 93,752 C90,785 98,812 108,826" stroke="#231F20" stroke-width="12"/>
+<path d="M196,742 C180,736 166,730 150,722 C118,710 96,722 93,752 C90,785 98,812 108,826" stroke="#ED1C24" stroke-width="8"/>
+<path d="M196,742 C180,736 166,730 150,722 C118,710 96,722 93,752 C90,785 98,812 108,826" stroke="#231F20" stroke-width="8" stroke-dasharray="1.4 6" stroke-linecap="butt"/>
+<path d="M612,742 C628,736 642,730 658,722 C690,710 712,722 715,752 C718,785 710,812 700,826" stroke="#231F20" stroke-width="12"/>
+<path d="M612,742 C628,736 642,730 658,722 C690,710 712,722 715,752 C718,785 710,812 700,826" stroke="#ED1C24" stroke-width="8"/>
+<path d="M612,742 C628,736 642,730 658,722 C690,710 712,722 715,752 C718,785 710,812 700,826" stroke="#231F20" stroke-width="8" stroke-dasharray="1.4 6" stroke-linecap="butt"/>
+</g>
+<g stroke="#231F20" stroke-width="2.2" stroke-linejoin="round">
+<g id="tassel">
+<ellipse cx="110" cy="834" rx="15" ry="11" fill="#ED1C24"/>
+<path d="M98,852 L124,852 C134,875 145,898 152,912 C130,922 92,922 70,912 C80,896 90,875 98,852 Z" fill="#ED1C24"/>
+<rect x="93" y="842" width="36" height="11" rx="4" fill="#ED1C24"/>
+<g fill="none" stroke-width="1.6"><line x1="104" y1="856" x2="86" y2="914"/><line x1="111" y1="856" x2="104" y2="917"/><line x1="118" y1="856" x2="124" y2="917"/><line x1="123" y1="856" x2="140" y2="913"/></g>
+</g>
+<g transform="translate(808,0) scale(-1,1)">
+<ellipse cx="110" cy="834" rx="15" ry="11" fill="#ED1C24"/>
+<path d="M98,852 L124,852 C134,875 145,898 152,912 C130,922 92,922 70,912 C80,896 90,875 98,852 Z" fill="#ED1C24"/>
+<rect x="93" y="842" width="36" height="11" rx="4" fill="#ED1C24"/>
+<g fill="none" stroke-width="1.6"><line x1="104" y1="856" x2="86" y2="914"/><line x1="111" y1="856" x2="104" y2="917"/><line x1="118" y1="856" x2="124" y2="917"/><line x1="123" y1="856" x2="140" y2="913"/></g>
+</g>
+</g>
+<path d="M194,395 H404 V911 C248,830 194,800 194,735 Z" fill="#ED1C24"/>
+<path d="M404,395 H614 V735 C614,800 560,830 404,911 Z" fill="#0071BC"/>
+<g stroke="#231F20" stroke-width="2.5" stroke-linejoin="round">
+<rect x="290" y="560" width="18" height="185" fill="#E3A924"/>
+<rect x="255" y="598" width="88" height="18" fill="#E3A924"/>
+<rect x="291.3" y="599.3" width="15.4" height="15.4" fill="#E3A924" stroke="none"/>
+<path d="M222,790 C226,760 248,748 262,762 C272,724 290,712 299,712 C308,712 326,724 336,762 C350,748 372,752 384,772 L384,790 Z" fill="#E3A924"/>
+</g>
+<g transform="translate(509,668) scale(1.9) translate(-397,-319)" fill="none" stroke-linecap="round">
+<path d="M368,268 C382,248 406,246 432,262" stroke="#231F20" stroke-width="8.5"/>
+<path d="M368,268 C382,248 406,246 432,262" stroke="#E3A924" stroke-width="6"/>
+<path d="M368,268 C358,302 362,350 380,386" stroke="#231F20" stroke-width="9.5"/>
+<path d="M368,268 C358,302 362,350 380,386" stroke="#E3A924" stroke-width="7"/>
+<path d="M432,262 L384,384" stroke="#231F20" stroke-width="13.5"/>
+<path d="M432,262 L384,384" stroke="#E3A924" stroke-width="11"/>
+<g stroke="#231F20" stroke-width="1.1"><line x1="390" y1="252" x2="390" y2="366"/><line x1="400" y1="250" x2="400" y2="342"/><line x1="410" y1="250" x2="410" y2="317"/><line x1="420" y1="253" x2="420" y2="292"/></g>
+<circle cx="381" cy="387" r="5.5" fill="#E3A924" stroke="#231F20" stroke-width="1.3"/>
+</g>
+<path d="M404,470 C432,432 498,432 498,470 C498,508 432,508 404,470 C376,432 310,432 310,470 C310,508 376,508 404,470 Z" fill="none" stroke="#231F20" stroke-width="17"/>
+<path d="M404,470 C432,432 498,432 498,470 C498,508 432,508 404,470 C376,432 310,432 310,470 C310,508 376,508 404,470 Z" fill="none" stroke="#BABCBB" stroke-width="11.5"/>
+<path transform="translate(250,470) scale(3.3)" fill="#BABCBB" stroke="#231F20" stroke-width="0.9" stroke-linejoin="round" d="M0,-7 L2,-2.2 7,-2.2 3,0.9 4.4,5.8 0,2.9 -4.4,5.8 -3,0.9 -7,-2.2 -2,-2.2Z"/>
+<path transform="translate(558,470) scale(3.3)" fill="#BABCBB" stroke="#231F20" stroke-width="0.9" stroke-linejoin="round" d="M0,-7 L2,-2.2 7,-2.2 3,0.9 4.4,5.8 0,2.9 -4.4,5.8 -3,0.9 -7,-2.2 -2,-2.2Z"/>
+<path d="M194,395 H614 V735 C614,800 560,830 404,911 C248,830 194,800 194,735 Z" fill="none" stroke="#231F20" stroke-width="3"/>
+<line x1="404" y1="395" x2="404" y2="911" stroke="#231F20" stroke-width="2.5"/>
+<g stroke="#231F20" stroke-width="2.5" stroke-linejoin="round">
+<path d="M290,296 C278,250 266,215 267,195 C268,160 300,120 323,92 C350,58 385,22 404,5 C425,20 460,58 485,92 C510,125 540,160 541,195 C541,215 530,255 518,296 Z" fill="#E3A924"/>
+<path d="M323,92 C350,58 385,22 404,5 C425,20 460,58 485,92 C470,98 460,99 450,99 L358,98 C340,98 330,96 323,92 Z" fill="#BABCBB"/>
+<path d="M283,135 H380 Q386,135 386,140 V168 Q386,172 380,172 H300 Q285,172 279,160 Z" fill="#BABCBB"/>
+<path d="M525,135 H428 Q422,135 422,140 V168 Q422,172 428,172 H508 Q523,172 529,160 Z" fill="#BABCBB"/>
+<path d="M274,210 H380 Q386,210 386,215 V243 Q386,248 380,248 H278 L272,224 Q273,212 288,210 Z" fill="#BABCBB"/>
+<path d="M534,210 H428 Q422,210 422,215 V243 Q422,248 428,248 H530 L536,224 Q535,212 520,210 Z" fill="#BABCBB"/>
+</g>
+<g transform="translate(-4,22) scale(0.4927)" stroke="#231F20" stroke-width="5" stroke-linejoin="round">
+<path d="M318,2072 C356,2118 388,2140 420,2140 L548,2096 C574,2086 572,2050 540,2034 L452,2018 Z" fill="#FFFFFF"/><path d="M318,2072 C356,2118 388,2140 420,2140 C442,2124 446,2094 420,2068 C390,2060 350,2060 318,2072 Z" fill="#ED1C24"/>
+<path d="M1298,2072 C1260,2118 1228,2140 1196,2140 L1068,2096 C1042,2086 1044,2050 1076,2034 L1164,2018 Z" fill="#FFFFFF"/><path d="M1298,2072 C1260,2118 1228,2140 1196,2140 C1174,2124 1170,2094 1196,2068 C1226,2060 1266,2060 1298,2072 Z" fill="#ED1C24"/>
+<path d="M808,1850 C600,1852 430,1895 345,1925 C320,1905 300,1880 270,1878 C230,1876 190,1898 125,1905 C95,1910 88,1937 110,1957 C150,1992 195,2025 215,2085 C400,2015 620,1968 808,1965 C996,1968 1216,2015 1401,2085 C1421,2025 1466,1992 1506,1957 C1528,1937 1521,1910 1491,1905 C1426,1898 1386,1876 1346,1878 C1316,1880 1296,1905 1271,1925 C1186,1895 1016,1852 808,1850 Z" fill="#FFFFFF"/>
+<path d="M110,1957 C88,1937 95,1910 125,1905 C160,1902 200,1935 228,1972 C190,1978 145,1975 110,1957 Z" fill="#ED1C24"/><path d="M1506,1957 C1528,1937 1521,1910 1491,1905 C1456,1902 1416,1935 1388,1972 C1426,1978 1471,1975 1506,1957 Z" fill="#ED1C24"/>
+<path d="M345,1925 C300,1960 245,2012 215,2085" fill="none"/><path d="M1271,1925 C1316,1960 1371,2012 1401,2085" fill="none"/>
+<path id="mottoArc" d="M300,2045 Q808,1838 1316,2045" fill="none" stroke="none"/>
+<text font-family="Georgia, 'Times New Roman', serif" font-size="88" letter-spacing="3" fill="#231F20" stroke="none"><textPath href="#mottoArc" startOffset="50%" text-anchor="middle">NUMERAT STELLAS</textPath></text>
+</g>
+</svg>

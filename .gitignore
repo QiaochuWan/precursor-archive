@@ -1,0 +1,6 @@
+# 离线包（python3 tools/build.py 生成，只供 file:// 打开使用）
+data/bundle.js
+data/img-bundle.js
+*.zip
+__pycache__/
+.DS_Store
